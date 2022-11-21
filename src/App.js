@@ -1,17 +1,19 @@
 import React from 'react';
 import Introduction from './components/introduction';
 import Questions from './components/questions';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Sex from './components/sex';
+import Male from './components/male';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
  export default function App() {
   return (
     <Router>
-      <Route>
-        <Introduction/>
-      </Route>
-      <Route path="/questions">
-        <Questions />
-      </Route>
+      <Routes>
+        <Route path= "/" element={<Introduction />} />
+        <Route path="/questions" element= {<Questions />} />
+        <Route path="/sex" element= {<Sex />} />
+        <Route path="/male" element= {<Male />} />
+      </Routes>
     </Router>
   );
 }

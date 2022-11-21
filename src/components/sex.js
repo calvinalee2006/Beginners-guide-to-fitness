@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function sex() {
@@ -6,10 +7,10 @@ export default function sex() {
         <>
         <header>Gender</header>
         <p>What was your gender at birth?</p>
-        <NavLink to="">
+        <NavLink to="/male">
             <button>Male</button>
             </NavLink>
-            <NavLink to="">
+            <NavLink to="/female">
             <button>Female</button>
             </NavLink>
         </>
