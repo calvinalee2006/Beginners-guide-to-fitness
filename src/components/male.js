@@ -25,7 +25,7 @@ export default function male() {
     return (
         <>
         <header>Questions</header>
-
+<form>
             <fieldset>
                 <legend>How old are you?</legend>
 
@@ -136,6 +136,7 @@ export default function male() {
                 />
                 <label htmlFor = "videos"> Success Videos</label>
             </fieldset>
+            </form>
 
 
         </>
