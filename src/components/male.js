@@ -6,11 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function male() {
     const[formData, setFormData] = useState(
-        {userAge: "", goals:"",
+        {userAge: "", goals:"", motivate: ""
             }
         )
 
-        console.log(formData.userAge)
+        console.log(formData)
 
     function handleChange(event){
         const{name, value, type, checked} = event.target
@@ -40,7 +40,6 @@ export default function male() {
                 <label htmlFor="young"> 18-28 </label>
                 <br />
 
-                
                 <input 
                 type='radio'
                 id="middleAged"
@@ -52,7 +51,6 @@ export default function male() {
                 <label htmlFor="middleAged"> 29-39 </label>
                 <br />
 
-                
                 <input 
                 type='radio'
                 id="older"
@@ -64,7 +62,6 @@ export default function male() {
                 <label htmlFor="older"> 40-50 </label>
                 <br />
 
-                
                 <input 
                 type='radio'
                 id="senior"
@@ -138,8 +135,6 @@ export default function male() {
                 onChange = {handleChange}
                 />
                 <label htmlFor = "videos"> Success Videos</label>
-
-
             </fieldset>
 
 
