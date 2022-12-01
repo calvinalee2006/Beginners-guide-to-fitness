@@ -1,8 +1,7 @@
 import React from 'react';
 import Introduction from './components/introduction';
-import Questions from './components/questions';
-import Sex from './components/sex';
-import Male from './components/male';
+import Questions from './components/beginning';
+import Male from './components/questions';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
  export default function App() {
@@ -10,9 +9,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
     <Router>
       <Routes>
         <Route path= "/" element={<Introduction />} />
-        <Route path="/questions" element= {<Questions />} />
-        <Route path="/sex" element= {<Sex />} />
-        <Route path="/male" element= {<Male />} />
+        <Route path="/beginning" element= {<Questions />} />
+        <Route path="/questions" element= {<Male />} />
       </Routes>
     </Router>
   );
