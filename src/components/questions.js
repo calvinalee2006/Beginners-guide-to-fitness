@@ -5,17 +5,21 @@ import Form from 'react-bootstrap/Form';
 //Buttons show clicked in console but not on page, continue investigation. Css issue?
 
 export default function Questions() {
-    const[formData, setFormData] = useState(
-        {gender: "", userAge: "", goals:"", motivate: ""})
+    const[formData, setFormData] = useState({
+        gender: "", 
+        userAge: "", 
+        goals:"", 
+        motivate: ""
+    });
 
-    function handleChange(event){
-        const{name, value, type, checked} = event.target
+    function handleChange(event) {
+        const { name, value, type, checked } = event.target;
        setFormData(prevFormData => {
         return {
             ...prevFormData,
             [name]: type === 'checkbox' ? checked : value 
-        }
-       })
+        };
+       });
     }
 
     function handleSubmit(event) {
@@ -28,7 +32,6 @@ export default function Questions() {
         <header>Questions</header>
 
 <Form onSubmit={handleSubmit}>
-
     <fieldset>
     <legend>What was your gender at birth</legend>
         <input 
@@ -36,21 +39,24 @@ export default function Questions() {
         id = 'male'
         name = 'gender' 
         value = 'male'
-        checked={formData.male === "male"}
-        onChange={handleChange}/>
+        checked={formData.gender === "male"}
+        onChange={handleChange}
+        />
         <label htmlFor="male"> Male </label>
-                <br />
+        <br />
 
         <input 
         type='radio'
         id='female'
         name='gender'
         value = 'female' 
-        checked={formData.female === "female"}
-        onChange={handleChange}/>
+        checked={formData.gender === "female"}
+        onChange={handleChange}
+        />
         <label htmlFor="female"> Female </label>
-                <br />
+        <br />
     </fieldset>
+
             <fieldset>
                 <legend>How old are you?</legend>
 
@@ -59,7 +65,7 @@ export default function Questions() {
                 id="young"
                 name="userAge"
                 value="young"
-                checked={formData.young === "young"}
+                checked={formData.userAge === "young"}
                 onChange={handleChange}
                 />
                 <label htmlFor="young"> 18-28 </label>
@@ -70,7 +76,7 @@ export default function Questions() {
                 id="middleAged"
                 name="userAge"
                 value="middleAged"
-                checked={formData.middleAged === "middleAged"}
+                checked={formData.userAge === "middleAged"}
                 onChange={handleChange}
                 />
                 <label htmlFor="middleAged"> 29-39 </label>
@@ -81,7 +87,7 @@ export default function Questions() {
                 id="older"
                 name="userAge"
                 value="older"
-                checked={formData.older === "older"}
+                checked={formData.userAge === "older"}
                 onChange={handleChange}
                 />
                 <label htmlFor="older"> 40-50 </label>
@@ -92,7 +98,7 @@ export default function Questions() {
                 id="senior"
                 name="userAge"
                 value="senior"
-                checked={formData.senior === "senior"}
+                checked={formData.userAge === "senior"}
                 onChange={handleChange}
                 />
                 <label htmlFor="senior"> 51+ </label>
@@ -108,7 +114,7 @@ export default function Questions() {
                 id="active"
                 name="goals"
                 value="active"
-                checked = {formData.active === "active"}
+                checked = {formData.goals === "active"}
                 onChange={handleChange}
                 />
                 <label htmlFor='active'>To stay active!</label>
@@ -119,7 +125,7 @@ export default function Questions() {
                 id="weight"
                 name="goals"
                 value= "weight"
-                checked = {formData.weight === "weight"}
+                checked = {formData.goals === "weight"}
                 onChange={handleChange}
                 />
                 <label htmlFor="weight"> To loose weight</label>
@@ -134,7 +140,7 @@ export default function Questions() {
                 id="music"
                 name = "motivate"
                 value="music"
-                checked = {formData.music === 'music'}
+                checked = {formData.motivate === 'music'}
                 onChange={handleChange}
                 />
                 <label htmlFor = "music"> Music</label>
@@ -145,7 +151,7 @@ export default function Questions() {
                 id="speeches"
                 name ="motivate"
                 value ="speeches"
-                checked = {formData.speeches === "speeches"}
+                checked = {formData.motivate === "speeches"}
                 onChange = {handleChange}
                 />
                 <label htmlFor = "speeches">Motivational speeches</label>
@@ -156,7 +162,7 @@ export default function Questions() {
                 id="videos"
                 name ="motivate"
                 value ="videos"
-                checked ={formData.videos === "videos"}
+                checked ={formData.motivate === "videos"}
                 onChange = {handleChange}
                 />
                 <label htmlFor = "videos"> Success Videos</label>
