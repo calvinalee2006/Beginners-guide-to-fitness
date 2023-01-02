@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
-import {NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
 //Buttons show clicked in console but not on page, continue investigation. Css issue?
 
-export default function male() {
+export default function Questions() {
     const[formData, setFormData] = useState(
-        {gender: "", userAge: "", goals:"", motivate: ""
-            }
-        )
+        {gender: "", userAge: "", goals:"", motivate: ""})
 
     function handleChange(event){
         const{name, value, type, checked} = event.target
