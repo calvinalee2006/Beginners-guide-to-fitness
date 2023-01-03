@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
-//Buttons show clicked in console but not on page, continue investigation. Css issue?
-
 export default function Questions() {
     const[formData, setFormData] = useState({
         gender: "", 
@@ -20,6 +18,7 @@ export default function Questions() {
             [name]: type === 'checkbox' ? checked : value 
         };
        });
+       this.handleInputChange.bind(this);
     }
 
     function handleSubmit(event) {
