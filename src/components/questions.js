@@ -18,13 +18,16 @@ export default function Questions() {
             [name]: type === 'checkbox' ? checked : value 
         };
        });
-       this.handleInputChange.bind(this);
+      
     }
 
     function handleSubmit(event) {
         event.preventDefault()
         console.log(formData)
-       }
+        ValidityState(formValues)
+       };
+
+       const validate = values => {}
 
     return (
         <>
