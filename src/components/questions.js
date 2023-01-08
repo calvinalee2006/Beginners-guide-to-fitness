@@ -2,13 +2,16 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
+
 export default function Questions() {
+    
     const[formData, setFormData] = useState({
         gender: "", 
         userAge: "", 
         goals:"", 
         motivate: ""
     });
+
 
     function handleChange(event) {
         const { name, value, type, checked } = event.target;
@@ -23,11 +26,8 @@ export default function Questions() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(formData)
-        ValidityState(formValues)
        };
 
-       const validate = values => {}
 
     return (
         <>
