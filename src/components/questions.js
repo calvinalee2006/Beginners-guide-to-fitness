@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {redirect} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
@@ -10,9 +9,7 @@ export default function Questions() {
         gender: "", 
         userAge: "", 
         goals:"", 
-        motivate: ""
     });
-
 
     function handleChange(event) {
         const { name, value, type, checked } = event.target;
@@ -22,18 +19,12 @@ export default function Questions() {
             [name]: type === 'checkbox' ? checked : value 
         };
        });
-      
     }
 
     function handleSubmit(event) {
         event.preventDefault()
         console.log(formData)
-
-        //  if(formData.gender === "male" && formData.userAge === "young" && formData.goals === "active" && formData.motive === "music"){
-        //     <Redirect to = "/beginning" />
-        //  }  
        };
-
 
     return (
         <>
@@ -140,44 +131,7 @@ export default function Questions() {
                     </fieldset>
                     <br />
 
-                    <fieldset>
-                        <legend>What would help motivate you when exercising?</legend>
-
-                        <input 
-                        type ="radio"
-                        id="music"
-                        name = "motivate"
-                        value="music"
-                        checked = {formData.motivate === 'music'}
-                        onChange={handleChange}
-                        />
-                        <label htmlFor = "music"> Music</label>
-                        <br />
-
-                        <input
-                        type ="radio"
-                        id="speeches"
-                        name ="motivate"
-                        value ="speeches"
-                        checked = {formData.motivate === "speeches"}
-                        onChange = {handleChange}
-                        />
-                        <label htmlFor = "speeches">Motivational speeches</label>
-                        <br />
-
-                        <input
-                        type = "radio"
-                        id="videos"
-                        name ="motivate"
-                        value ="videos"
-                        checked ={formData.motivate === "videos"}
-                        onChange = {handleChange}
-                        />
-                        <label htmlFor = "videos"> Success Videos</label>
-                    </fieldset>
-                    <br />
-                    <br />
-                    <button>Submit</button>
+                    <button type='submit'>Submit</button>
                     </Form>
 
 
