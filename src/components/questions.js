@@ -131,7 +131,9 @@ export default function Questions() {
                     </fieldset>
                     <br />
 
-                    <button type='submit'>Submit</button>
+                    <button
+                     className = 'submitButton' onClick = {handleSubmit}
+                      type='submit'>Submit</button>
                     </Form>
 
 

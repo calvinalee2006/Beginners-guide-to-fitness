@@ -9,6 +9,6 @@ function personalExercise(formData) {
 }
 
 
-function workout(){
+// function workout(){
 
-}
+// }
