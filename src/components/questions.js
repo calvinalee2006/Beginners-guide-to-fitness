@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
 
-export default function Questions() {
+export default function Questions(props) {
     
     const[formData, setFormData] = useState({
         gender: "", 
@@ -23,7 +23,8 @@ export default function Questions() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(formData)
+         props.getData(formData)
+        // console.log(formData)
        };
 
     return (
@@ -131,9 +132,7 @@ export default function Questions() {
                     </fieldset>
                     <br />
 
-                    <button
-                     className = 'submitButton' onClick = {handleSubmit}
-                      type='submit'>Submit</button>
+                    <button type='submit'>Submit</button>
                     </Form>
 
 
