@@ -16,9 +16,9 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
     <Router>
       <Routes>
         <Route path= "/" element={<Introduction />} />
-        <Route path="/beginning" element= {<Questions getData={getData} />} />
-        <Route path="/personalExercise" element={<personalExercise data={data}/>} />
+        <Route path="/beginning" element= {<Questions  />} />
         <Route path="/questions" element= {<Male />} />
+        <Route path="/personalExercise" element={<personalExercise data={data}/>} />
       </Routes>
     </Router>
   );

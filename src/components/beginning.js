@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function Questions() {
+export default function beginning() {
     return (
         <>
         <p>Before beginning, would you mind entering some info about yourself? This information

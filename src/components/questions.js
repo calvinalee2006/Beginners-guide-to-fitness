@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form';
 
 
-export default function Questions(props) {
+export default function questions(props) {2
     
     const[formData, setFormData] = useState({
         gender: "", 
