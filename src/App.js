@@ -13,12 +13,13 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
   }
 
   return (
+    //Revisit <Route path="/questions" element= {<Male />} /> for Readability!!
     <Router>
       <Routes>
         <Route path= "/" element={<Introduction />} />
-        <Route path="/beginning" element= {<Questions  />} />
-        <Route path="/questions" element= {<Male />} />
+        <Route path="/beginning" element= {<Questions getData={getData}  />} />
         <Route path="/personalExercise" element={<personalExercise data={data}/>} />
+        <Route path="/questions" element= {<Male />} /> 
       </Routes>
     </Router>
   );
