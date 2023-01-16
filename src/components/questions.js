@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import {NavLink} from 'react-router-dom'
 import Form from 'react-bootstrap/Form';
 
 
@@ -23,9 +23,9 @@ export default function Questions(props) {
 
     function handleSubmit(event) {
         event.preventDefault()
-         props.getData(formData)
-        // console.log(formData)
+         console.log(formData)
        };
+ 
 
     return (
         <>
@@ -132,7 +132,7 @@ export default function Questions(props) {
                     </fieldset>
                     <br />
 
-                    <button type='submit'>Submit</button>
+                    <button onClick ={handleSubmit} type='submit'>Submit</button>
                     </Form>
 
 
