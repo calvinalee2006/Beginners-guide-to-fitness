@@ -1,6 +1,6 @@
-import React, {useState, useNavigate} from 'react';
+import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
-import { BrowserRouter as Redirect} from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 
 export default function Questions(props) {
     
@@ -20,16 +20,18 @@ export default function Questions(props) {
        });
     }
 
+    
+function userPage() {
+    const navigate = useNavigate()
+}
     function handleSubmit(event) {
-        const navigate = useNavigate()
         event.preventDefault()
-        navigate(getPath());
+       
 
        };
-
        const getPath = () => {
         switch (formData) {
-            case { gender: "male", userAge: "young", goals: "active" }: return <Redirect to='./introduction'/>;
+            case { gender: "male", userAge: "young", goals: "active" }: return navigate("./introduction");
            
          }
     }
