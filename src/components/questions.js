@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
-import { NavLink,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Questions(props) {
-    
+    const navigate = useNavigate()
     const[formData, setFormData] = useState({
         gender: "", 
         userAge: "", 
@@ -20,20 +20,22 @@ export default function Questions(props) {
        });
     }
 
-    
-function userPage() {
-    const navigate = useNavigate()
-}
     function handleSubmit(event) {
         event.preventDefault()
+        navigate(getPath())
        
 
        };
        const getPath = () => {
-        switch (formData) {
-            case { gender: "male", userAge: "young", goals: "active" }: return navigate("./introduction");
-           
-         }
+        if(formData.gender === "male" && formData.userAge === "Young" && formData.goals === "active"){
+            return navigate("/beginning")
+        }
+        // switch (formData) {
+        //     case { gender: "male", userAge: "young", goals: "active" }: return navigate("../beginning");
+        //     break;
+        //     default:
+        //        return navigate("/beginning")
+        // }
     }
 
        
