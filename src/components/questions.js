@@ -22,13 +22,13 @@ export default function Questions(props) {
 
     function handleSubmit(event) {
         event.preventDefault()
-        navigate(getPath())
+       getPath()
        
 
        };
        const getPath = () => {
         if(formData.gender === "male" && formData.userAge === "Young" && formData.goals === "active"){
-            return navigate("/beginning")
+            navigate("../beginning")
         }
         // switch (formData) {
         //     case { gender: "male", userAge: "young", goals: "active" }: return navigate("../beginning");
