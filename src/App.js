@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Introduction from './components/introduction';
 import Questions from './components/beginning';
 import Male from './components/questions';
+import getRightToIt from './userPages/Getrighttoit';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
  export default function App() {
@@ -16,6 +17,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
         <Route path="/beginning" element= {<Questions  />} />
         <Route path="/personalExercise" element={<personalExercise/>} />
         <Route path="/questions" element= {<Male />}  /> 
+        <Route path='/Getrighttoit' element={<Getrighttoit />} />
       </Routes>
     </Router>
   );

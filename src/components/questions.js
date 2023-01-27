@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 
 export default function Questions(props) {
     const navigate = useNavigate()
@@ -27,14 +27,38 @@ export default function Questions(props) {
        
        const getPath = () => {
         if(formData.gender === "male" && formData.userAge === "young" && formData.goals === "active"){
-            navigate("/beginning")
+            navigate("/beginning");
+        } else if (formData.gender === "male" && formData.userAge === "middleAged" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "male" && formData.userAge === "older" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "male" && formData.userAge === "senior" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "male" && formData.userAge === "young" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "male" && formData.userAge === "middleAged" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "male" && formData.userAge === "older" && formData.goals === "weight"){
+            navigate("/beginning");
+        } else if(formData.gender === "male" && formData.userAge === "senior" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "young" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "middleAged" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "older" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "senior" && formData.goals === "active"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "young" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "middleAged" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "older" && formData.goals === "weight"){
+            navigate("/beginning");
+        }else if (formData.gender === "female" && formData.userAge === "senior" && formData.goals === "weight"){
+            navigate("/beginning");
         }
-        // switch (formData) {
-        //     case { gender: "male", userAge: "young", goals: "active" }:   return  navigate('/introduction') 
-        //     break;
-        //     default:
-        //        return navigate("/beginning")
-        // }
     }
 
        
@@ -146,6 +170,12 @@ export default function Questions(props) {
 
                     <button type="submit">Submit</button>
                     </Form>
+                    <br/>
+
+                    <p>Click here if you changed your mind!!</p>
+                    <NavLink to="/exercise">
+            <button>Skip Questionnaire</button>
+            </NavLink>
 
 
                 </>

@@ -15,7 +15,7 @@ export default function beginning() {
             <NavLink to="/questions">
             <button>Take Questionnaire</button>
             </NavLink>
-            <NavLink to="/exercise">
+            <NavLink to="/Getrighttoit">
             <button>Skip Questionnaire</button>
             </NavLink>
         </>
