@@ -15,7 +15,7 @@ export default function BeforeBeginning() {
             <NavLink to="/questions">
             <button>Take Questionnaire</button>
             </NavLink>
-            <NavLink  to ="">
+            <NavLink  to ="/noSurvey">
             <button>Skip Questionnaire</button>
             </NavLink>
         </>
