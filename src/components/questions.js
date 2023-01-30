@@ -60,9 +60,6 @@ export default function Questions(props) {
             navigate("/beginning");
         }
     }
-
-       
- 
     return (
         <>
         <header>Questions</header>

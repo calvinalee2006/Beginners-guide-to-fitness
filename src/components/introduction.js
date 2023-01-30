@@ -19,7 +19,6 @@ export default function introduction() {
           <NavLink to="/beginning">
             <button>Next</button>
             </NavLink>
-    
       </>
     )
   }

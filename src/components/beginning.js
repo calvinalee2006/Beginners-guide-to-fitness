@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-export default function beginning() {
+export default function BeforeBeginning() {
     return (
         <>
         <p>Before beginning, would you mind entering some info about yourself? This information
@@ -15,7 +15,7 @@ export default function beginning() {
             <NavLink to="/questions">
             <button>Take Questionnaire</button>
             </NavLink>
-            <NavLink to="/Getrighttoit">
+            <NavLink  to ="">
             <button>Skip Questionnaire</button>
             </NavLink>
         </>
