@@ -15,7 +15,27 @@ function NoSurvey() {
             <p>Trevor Thieme, C.S.C.S and Beachbody's senior manager of fitness and nutrition  {/*Beachbodys link */}  </p> 
      </p>
      <p>Cardio does not have to be a marathon run or climbing Mt.Everest, It can be something simple as
-        going outside and playing with children or yard work. Here are some more examples of exercise  </p>
+        going outside and playing with children or yard work. Here are some more examples of exercise: 
+        <ul>
+            <li>walking</li>
+            <li>Running</li>
+            <li>Cycling</li>
+            <li>Swimming</li>
+            <li>Sports activities</li>
+            <li>Jumping Rope</li>
+            <li>Playing outside with your children</li>
+        </ul>
+        Just to name a few!
+        </p>
+        <p><b>Remember</b> you just need to keep the intensity high enough to challenge your heart and lungs!</p>
+        <p>A study in the <i>Journal of Physiology</i> found that <b>Four to five cardio workouts a week is optimal 
+            for cardiovascular health</b><br />
+            - You can read more about how to pick which cardio exercise is right for you {/*Link here*/}here if you would like to learn more.</p>
+            <p>For now this is how we recommend you starting with one of these activities:<br />
+            - Start off with a nice walk through your local area for approx. 30 minutes. This small walk will give you 
+            a chance to enjoy nature at its finest. <br />
+            -If the weather is not cooperating and you have to stay inside, we recommend using youtube and finding a nice 30 min workout! {/*Link here*/} </p>
+            -If you are not to big into Youtube, try one of our selected cardio/exercise workouts! 
     </>
   )
 }
