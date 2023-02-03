@@ -12,7 +12,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
         <Route path= "/" element={<Introduction />} />
         <Route path="/beginning" element= {<BeforeBeginning  />} />
         <Route path="/questions"  exact element= {<Questions />}  />
-        <Route path ="noSurvey"  exact element ={<NoSurvey />}/> 
+        <Route path="noSurvey"  exact element ={<NoSurvey />}/> 
       </Routes>
     </Router>
   );

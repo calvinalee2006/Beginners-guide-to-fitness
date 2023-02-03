@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 function NoSurvey() {
   return (
@@ -12,7 +13,7 @@ function NoSurvey() {
         of when wanting to get back into shape. Cardio fitness is anything that will:<br />
             A. Raises your heart and breathing rate<br />
             B. Improves the function of your heart, lungs and circulatory system.<br />
-            <p>Trevor Thieme, C.S.C.S and Beachbody's senior manager of fitness and nutrition  {/*Beachbodys link */}  </p> 
+            <p>Trevor Thieme, C.S.C.S and Beachbody's senior manager of fitness and nutrition <NavLink href="https://www.beachbodyondemand.com/blog/what-is-cardio">Here</NavLink></p> 
      </p>
      <p>Cardio does not have to be a marathon run or climbing Mt.Everest, It can be something simple as
         going outside and playing with children or yard work. Here are some more examples of exercise: 
