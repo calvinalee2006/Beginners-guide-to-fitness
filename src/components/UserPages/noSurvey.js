@@ -2,6 +2,7 @@ import React from 'react'
 import Video from './YoutubeVideoEmbed'
 import OlderCoupleWalking from './noSurveyImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './noSurveyImages/running-buddies.jpg'
+import {NavLink} from 'react-router-dom';
 
 function NoSurvey() {
   return (
@@ -56,7 +57,7 @@ function NoSurvey() {
           maybe your workout is getting kind of boring. Once you start noticing these progressions then you can start picking up the pace a little more! Extend your walk by 5-10 minutes, workout to 
           two youtube videos instead of one, the options are endless!  
          </p>
-         <p>One <b>IMPORTANT</b> habit to get into when workout out, is writing your your workouts down in a journal here is an example: {/*Make a React workout Journal*/}</p>
+         <p>One <b>IMPORTANT</b> habit to get into when workout out, is writing your your workouts down in a journal here is an example:<NavLink to="/WorkoutJournal">Here</NavLink> </p>
     </>
   )
 }

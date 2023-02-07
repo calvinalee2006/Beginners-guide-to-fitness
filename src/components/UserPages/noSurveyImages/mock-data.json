@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "Date": "02/07/23",
+        "Activity": "Walking",
+        "Time": "30 min",
+        "Notes": "Enjoyed a nice walk at the park"
+    },
+    {
+        "id": 2,
+        "Date": "02/08/23",
+        "Activity": "YouTube Video",
+        "Time": "30 min",
+        "Notes": "Beginner home workout with Jean-Claude"
+    },
+    {
+        "id": 1,
+        "Date": "02/09/23",
+        "Activity": "Played basketball with kids",
+        "Time": "45 min",
+        "Notes": "How do these kids have energy!?!?!"
+    }
+]
