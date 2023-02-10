@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import {nanoid} from 'nanoid';
 import data from "./mock-data.json";
 import './noSurvey.css';
-function WorkoutJournal() {
+import ReadOnlyRow from '../ReadOnlyRow';
+import EditableRow from '../EditableRow';
 
+function WorkoutJournal() {
   const [workoutData, setWorkoutData] = useState(data);
   const [addFormData, setAddFormData] = useState({
     Date: "", 
@@ -43,6 +45,7 @@ function WorkoutJournal() {
     <>
       <h1>My workout Journal</h1>
       <div className = 'app-container'>
+        <form>
         <table>
             <thead>
                 <tr>
@@ -54,15 +57,16 @@ function WorkoutJournal() {
             </thead>
             <tbody>
               {workoutData.map((workout) => (
-                <tr key={workout.id}>
-                  <td>{workout.Date}</td>
-                  <td>{workout.Activity}</td>
-                  <td>{workout.Time}</td>
-                  <td>{workout.Notes}</td>
-                </tr>
+                <Fragment>
+                  <EditableRow />
+                  <ReadOnlyRow workout ={workout} />
+                </Fragment>
+               
               ))}
             </tbody>
         </table>
+        </form>
+        
         <h2>Add your exercise</h2>
         <form onSubmit={handleAddFormSubmit}>
           <input 
