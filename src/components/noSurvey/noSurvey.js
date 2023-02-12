@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from './YoutubeVideoEmbed'
+import Video from '../YoutubeVideoEmbed'
 import OlderCoupleWalking from './noSurveyImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './noSurveyImages/running-buddies.jpg'
 import {NavLink} from 'react-router-dom';

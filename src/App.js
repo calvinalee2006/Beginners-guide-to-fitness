@@ -1,9 +1,7 @@
 import React from 'react';
 import Introduction from './components/introduction';
-import BeforeBeginning from './components/beginning';
-import NoSurvey from './components/UserPages/noSurvey';
-import Questions from './components/questions';
-import WorkoutJournal from './components/UserPages/noSurveyImages/WorkoutJournal';
+import NoSurvey from './components/noSurvey/noSurvey';
+import WorkoutJournal from "./components/noSurvey/WorkoutJournal";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
@@ -13,8 +11,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
     <Router>
       <Routes>
         <Route path= "/" element={<Introduction />} />
-        <Route path="/beginning" element= {<BeforeBeginning  />} />
-        <Route path="/questions"  exact element= {<Questions />}  />
         <Route path="noSurvey"  exact element ={<NoSurvey />}/> 
         <Route path ='WorkoutJournal' exact element ={<WorkoutJournal/>}/>
       </Routes>

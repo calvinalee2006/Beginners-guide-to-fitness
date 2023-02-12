@@ -1,9 +1,10 @@
 import React, {Fragment, useState} from 'react';
+import {NavLink} from 'react-router-dom'
 import {nanoid} from 'nanoid';
 import data from "./mock-data.json";
 import './noSurvey.css';
-import ReadOnlyRow from '../ReadOnlyRow';
-import EditableRow from '../EditableRow';
+import ReadOnlyRow from './ReadOnlyRow';
+import EditableRow from './EditableRow';
 
 function WorkoutJournal() {
   const [workoutData, setWorkoutData] = useState(data);
@@ -112,7 +113,14 @@ function WorkoutJournal() {
 
   return (
     <>
-      <h1>My workout Journal</h1>
+      <h1>Example workout Journal</h1>
+      <p> When starting your workout Journey, keeping track of every activity, whether it be an actual workout, yard work, 
+        or playing with your children etc. it is always important to take not of what you have done. Remember, the primary goal is to raise 
+        your heartbeat and in my own personal terms "break a sweat" 
+      </p>
+      <p>We prefer the tried and true pen and paper method of keeping track of your workout, but we openly welcome you to keep track of your 
+        workout through this table, that way you can look back at all your workouts! 
+      </p>
       <div className = 'app-container'>
         <form onSubmit ={handleEditFormSubmit}>
         <table>
@@ -179,6 +187,10 @@ function WorkoutJournal() {
           <button type ="submit">Add</button>
         </form>
       </div>
+
+      <NavLink to="/noSurvey">
+            <button>Back</button>
+            </NavLink>
     </>
   )
 }
