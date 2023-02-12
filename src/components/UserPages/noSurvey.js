@@ -48,10 +48,10 @@ function NoSurvey() {
             -If the weather is not cooperating and you have to stay inside, we recommend using youtube and finding a nice 30 min workout! 
             {/*Fix video playback */}
             <p>Here are two examples of beginner exercise videos that you can try! If those are not to your liking, you can always visit <a href="https://www.youtube.com/">youtube</a> and find one that fits your speed.</p>
-            <div>
+            
               <Video videoId="https://youtu.be/gC_L9qAHVJ8" />
               <Video videoId ="https://youtu.be/M0uO8X3_tEA" />
-            </div>
+           
          </p>
          <p> Once you start you will notice small progressions in yourself. Maybe you finished your workout with ease, maybe you don't sweat as much as when you first started, 
           maybe your workout is getting kind of boring. Once you start noticing these progressions then you can start picking up the pace a little more! Extend your walk by 5-10 minutes, workout to 

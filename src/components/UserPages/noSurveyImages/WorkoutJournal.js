@@ -14,6 +14,15 @@ function WorkoutJournal() {
     Notes: ""
   });
 
+  const [editFormData, setEditFormData] = useState({
+    Date: "", 
+    Activity: "",
+    Time: "",
+    Notes: ""
+  })
+
+  const [editWorkoutId, setEditWorkoutId] = useState(null)
+
   const handleAddFormChange = (event) => {
     event.preventDefault();
 
@@ -25,6 +34,40 @@ function WorkoutJournal() {
 
     setAddFormData(newFormData);
   }; 
+
+  const handleEditFormSubmit = (event) =>{
+    event.preventDefault();
+  
+    const editedWorkout = {
+      id: editWorkoutId,
+      Date: editFormData.Date, 
+      Activity: editFormData.Activity,
+      Time: editFormData.Time,
+      Notes: editFormData.Notes
+    };
+  
+    const newWorkoutData = [...workoutData];
+  
+    const index = workoutData.findIndex((workout)=> workout.id === editWorkoutId);
+  
+    newWorkoutData[index] = editedWorkout;
+    setWorkoutData(newWorkoutData);
+    setEditWorkoutId(null)
+  }
+  
+
+  
+  const handleEditFormChange = (event) => {
+    event.preventDefault();
+
+    const fieldName= event.target.getAttribute('name');
+    const fieldValue = event.target.value;
+
+    const newFormData = {...editFormData};
+    newFormData[fieldName] = fieldValue;
+
+    setEditFormData(newFormData);
+  };
 
   const handleAddFormSubmit = (event) => {
     event.preventDefault();
@@ -41,11 +84,25 @@ function WorkoutJournal() {
     setWorkoutData(newWorkOutData);
   }; 
 
+  const handleEditClick = (event, workout) =>{
+    event.preventDefault();
+    setEditWorkoutId(workout.id);
+
+    const formValues = {
+    Date: workout.Date, 
+    Activity: workout.Activity,
+    Time: workout.Time,
+    Notes: workout.Notes 
+    }
+
+    setEditFormData(formValues)
+  };
+
   return (
     <>
       <h1>My workout Journal</h1>
       <div className = 'app-container'>
-        <form>
+        <form onSubmit ={handleEditFormSubmit}>
         <table>
             <thead>
                 <tr>
@@ -53,20 +110,28 @@ function WorkoutJournal() {
                     <th>Activity</th>
                     <th>Time</th>
                     <th>Notes</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
               {workoutData.map((workout) => (
                 <Fragment>
-                  <EditableRow />
-                  <ReadOnlyRow workout ={workout} />
+                  {editWorkoutId === workout.id ? (
+                  <EditableRow editFormData={editFormData}  
+                  handleEditFormChange={handleEditFormChange}/>
+                  ) : (
+                     <ReadOnlyRow 
+                     workout ={workout} 
+                     handleEditClick ={handleEditClick} /> 
+                     )}
+                  
                 </Fragment>
                
               ))}
             </tbody>
         </table>
         </form>
-        
+
         <h2>Add your exercise</h2>
         <form onSubmit={handleAddFormSubmit}>
           <input 
