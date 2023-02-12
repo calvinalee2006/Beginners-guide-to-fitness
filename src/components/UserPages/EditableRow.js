@@ -1,6 +1,6 @@
 import React from 'react'
 
-function EditableRow({editFormData, handleEditFormChange} ) {
+function EditableRow({editFormData, handleEditFormChange, handleCancelClick} ) {
   return (
     <>
       <tr>
@@ -47,9 +47,10 @@ function EditableRow({editFormData, handleEditFormChange} ) {
           onChange ={handleEditFormChange}
           />
         </td>
-        
+
         <td>
           <button type ='submit'>Save</button>
+          <button type ='button' onClick ={handleCancelClick}>Cancel</button>
         </td>
       </tr>
     </>

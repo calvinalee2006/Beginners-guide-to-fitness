@@ -55,8 +55,6 @@ function WorkoutJournal() {
     setEditWorkoutId(null)
   }
   
-
-  
   const handleEditFormChange = (event) => {
     event.preventDefault();
 
@@ -98,6 +96,20 @@ function WorkoutJournal() {
     setEditFormData(formValues)
   };
 
+  const handleCancelClick = () => {
+    setEditWorkoutId(null);
+  }
+
+  const handleDeleteClick = (workoutId) => {
+    const newWorkoutData = [...workoutData]
+
+    const index = workoutData.findIndex((workout)=> workout.id === workoutId);
+
+    newWorkoutData.splice(index, 1);
+
+    setWorkoutData(newWorkoutData);
+  }
+
   return (
     <>
       <h1>My workout Journal</h1>
@@ -118,11 +130,13 @@ function WorkoutJournal() {
                 <Fragment>
                   {editWorkoutId === workout.id ? (
                   <EditableRow editFormData={editFormData}  
-                  handleEditFormChange={handleEditFormChange}/>
+                  handleEditFormChange={handleEditFormChange}
+                  handleCancelClick = {handleCancelClick}/>
                   ) : (
                      <ReadOnlyRow 
                      workout ={workout} 
-                     handleEditClick ={handleEditClick} /> 
+                     handleEditClick ={handleEditClick}
+                     handleDeleteClick = {handleDeleteClick} /> 
                      )}
                   
                 </Fragment>
