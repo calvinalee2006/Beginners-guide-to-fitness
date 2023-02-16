@@ -1,6 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import bumKicks from './stretchingImages/bumkicks.jpg'
+import highknee from './stretchingImages/highknee.jpg'
+import deadhang from './stretchingImages/deadhang.jpg'
+import cobra from './stretchingImages/cobra.jpg'
+import headToKnee from './stretchingImages/headtokneeforwardbend.jpg'
+import overhead from './stretchingImages/overheadtricepstretch.jpg'
 
 const stretching = () => {
   return (
@@ -23,10 +28,57 @@ const stretching = () => {
         that help get your muscles ready for exercise.</p>
         <p>Some examples of dynamic stretches are:</p>
         <ul>
-            <li>Bum kicks {/* Show illustrations and how to perform exercise*/}
-            <img src={bumKicks} width={200} height ={200} alt= "Someone illustrating the bum kick exercise" /></li>
-            <li>High knees {/* Show illustrations and how to perform exercise*/}</li>
-            <li>Dynamic hang {/* Show illustrations and how to perform exercise*/}</li>
+            <li>Bum kicks 
+              <img src={bumKicks} 
+              width={200}
+              height ={200}
+              alt="Someone illustrating the bum kick stretch" 
+                /> 
+
+            <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/oaq2UiWXof8" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+            </li>
+
+            <li>High knees 
+              <img src ={highknee}
+               width={200} 
+               height={200} 
+               alt="Someone illustrating the high knee stretch" />
+               
+
+               <iframe 
+               width="560" 
+               height="315" 
+               src="https://www.youtube.com/embed/oDdkytliOqE" 
+               title="YouTube video player" 
+               frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+               allowfullscreen>
+               </iframe>
+               </li>
+            <li>Dynamic hang 
+              <img 
+              src ={deadhang} 
+              width={200} 
+              height={200} 
+              alt="Someone illustrating the dynamic hang stretch" 
+              />
+              
+              <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/3CEmHJXbNpc" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+                </iframe>
+                </li>
         </ul>
 
         <p><b>Static</b> stretches are preferred to be performed after your workout and involves stretches that 
@@ -34,9 +86,55 @@ const stretching = () => {
         increasing flexibility and range of motion.</p>
         <p>Some Examples of static stretches are:</p>
         <ul>
-            <li>Cobra pose {/* Show illustrations and how to perform exercise*/}</li>
-            <li>Head-to-knee-forward bend {/* Show illustrations and how to perform exercise*/}</li>
-            <li>Overhead tricep extension {/* Show illustrations and how to perform exercise*/}</li>
+            <li>Cobra pose  
+            <img 
+            src ={cobra} 
+            width={200} 
+            height={200} 
+            alt="Someone illustrating the cobra stretch" />
+            
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/zgvolE4NAH0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+            </li>
+            <li>Head-to-knee-forward bend
+              <img 
+              src ={headToKnee} 
+              width={200} 
+              height={200} 
+              alt="Someone illustrating the head-to-knee-forward bend stretch" 
+              /> 
+              <iframe
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/Z3xK3trnpfw" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+              </iframe>
+              </li>
+            <li>Overhead tricep extension 
+              <img src ={overhead}
+              width={200} 
+              height={200}
+              alt="Someone illustrating the over-head-to-tricep extension stretch" />
+              
+              <iframe 
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zzvDO56B0HE" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+              </li>
         </ul>
 
         <h2>Benefits of stretching</h2>
@@ -47,8 +145,8 @@ const stretching = () => {
         - Decrease stress * Authors Note: Anyway to decrease stress is Awesome!* <br />
         - Increased blood flow </p>
 
-        <p>If you don't know where to start (or how to end), here are some videos and illustrations ou can use
-            for examples {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
+        <p>If you don't know where to start (or how to end), here are some videos and illustrations you can use
+            for examples of stretching routines {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
         </p>
 
         {/*Later Note: Add Authors static and dynamic stretch routine */}
