@@ -145,19 +145,30 @@ const stretching = () => {
         - Decrease stress * Authors Note: Anyway to decrease stress is Awesome!* <br />
         - Increased blood flow </p>
 
-        <p>If you don't know where to start (or how to end), here are some videos and illustrations you can use
-            for examples of stretching routines {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
+        <p>If you have a problem figuring out a Dynamic stretch that works for you, here are some stretch routines
+          that will help you get started. At some point during your routine, you will want to make some changes and 
+          maybe add something to your routine, which is completely normal! For now I would like to show you a full body routine that 
+          would work for any beginner.  {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
         </p>
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pPlFSqXnbls"
+        title="YouTube video player"
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
 
         {/*Later Note: Add Authors static and dynamic stretch routine */}
 
+      <div>
         <NavLink to="/">
             <button>Previous</button>
             </NavLink>
-
         <NavLink to="/Warmup">
             <button>Next</button>
             </NavLink>
+            </div>
 
         
     </>

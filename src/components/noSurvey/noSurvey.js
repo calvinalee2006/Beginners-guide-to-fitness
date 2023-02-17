@@ -1,5 +1,4 @@
 import React from 'react'
-import Video from '../YoutubeVideoEmbed'
 import OlderCoupleWalking from './noSurveyImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './noSurveyImages/running-buddies.jpg'
 import {NavLink} from 'react-router-dom';
@@ -49,8 +48,7 @@ function NoSurvey() {
             {/*Fix video playback */}
             <p>Here are two examples of beginner exercise videos that you can try! If those are not to your liking, you can always visit <a href="https://www.youtube.com/">youtube</a> and find one that fits your speed.</p>
             
-              <Video videoId="https://youtu.be/gC_L9qAHVJ8" />
-              <Video videoId ="https://youtu.be/M0uO8X3_tEA" />
+             
            
          </p>
          <p> Once you start you will notice small progressions in yourself. Maybe you finished your workout with ease, maybe you don't sweat as much as when you first started, 
