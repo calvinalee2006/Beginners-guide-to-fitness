@@ -6,6 +6,8 @@ import deadhang from './stretchingImages/deadhang.jpg'
 import cobra from './stretchingImages/cobra.jpg'
 import headToKnee from './stretchingImages/headtokneeforwardbend.jpg'
 import overhead from './stretchingImages/overheadtricepstretch.jpg'
+import dynamicstretch from "./stretchingImages/dynamicstretch.jpg"
+import fullbodystretch from './stretchingImages/fullbodystretch.jpg'
 
 const stretching = () => {
   return (
@@ -137,19 +139,13 @@ const stretching = () => {
               </li>
         </ul>
 
-        <h2>Benefits of stretching</h2>
-        <p><b><i>ALWAYS</i></b> make time for stretching!! Trainers and health professionals will always break 
-        down the importance of stretching such as:<br />
-        - Greater flexibility and range of motion <br />
-        - Less pain and stiffness <br />
-        - Decrease stress * Authors Note: Anyway to decrease stress is Awesome!* <br />
-        - Increased blood flow </p>
-
         <p>If you have a problem figuring out a Dynamic stretch that works for you, here are some stretch routines
           that will help you get started. At some point during your routine, you will want to make some changes and 
           maybe add something to your routine, which is completely normal! For now I would like to show you a full body routine that 
           would work for any beginner.  {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
         </p>
+
+        <h3>Dynamic Stretch examples</h3>
         <iframe
         width="560"
         height="315"
@@ -159,13 +155,65 @@ const stretching = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 
+        <img src={dynamicstretch} 
+              width={200}
+              height ={200}
+              alt="A dynamic stretch chart" 
+                /> 
+
+        <h3>Static Stretch examples</h3>
+        <p>Remember, static stretches are the main type of stretching that was performed during 
+          gym class in school, the main goal is loosen up and feel a bit better <b>AFTER</b> you
+          have performed your workout.
+        </p>
+
+        <iframe
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/aZ1PzhThqcU" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+         allowfullscreen>
+         </iframe>
+
+        <img src={fullbodystretch} 
+              width={200}
+              height ={200}
+              alt=" A chart of static stretches" 
+                />
         {/*Later Note: Add Authors static and dynamic stretch routine */}
 
+        <h2>Benefits of stretching</h2>
+
+        <p><b><i>ALWAYS</i></b> make time for stretching!! Trainers and health professionals will always break 
+        down the importance of stretching such as:<br />
+        - Greater flexibility and range of motion <br />
+        - Less pain and stiffness <br />
+        - Decrease stress * Authors Note: Anyway to decrease stress is Awesome!* <br />
+        - Increased blood flow </p>
+
+        <h3>Authors Advice!</h3>
+        <p>So from my experience exercising over the years, starting off with Dynamic stretches accomplishes 
+          the listed goals and makes you feel better, but I always needed something more to warm me up. When I had achieved a 
+          firmer grasp on a workout routine I added a small mini routine before I got the the main course. This routine was non-stop
+          and I felt the blood really pumping. 
+          My suggestion is once you get a great handle of what is works best for you, try and add this to the end of your dynamic stretch routine and 
+          before your workout.
+        </p>
+
+        <ul>
+          <li>Jumping jacks: 30 reps</li>
+          <li>Push-ups: 30reps</li>
+          <li>sit-ups or crunches: 30 reps </li>
+          <li>pull-ups: 30 reps</li>
+          <li> 5-10 min cool down</li>
+        </ul>
       <div>
         <NavLink to="/">
             <button>Previous</button>
             </NavLink>
-        <NavLink to="/Warmup">
+        <NavLink to="/cardio">
             <button>Next</button>
             </NavLink>
             </div>
