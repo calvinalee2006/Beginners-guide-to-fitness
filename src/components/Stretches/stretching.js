@@ -42,7 +42,7 @@ const stretching = () => {
             src="https://www.youtube.com/embed/oaq2UiWXof8" 
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+            allowFullscreen>
             </iframe>
             </li>
 
@@ -58,9 +58,9 @@ const stretching = () => {
                height="315" 
                src="https://www.youtube.com/embed/oDdkytliOqE" 
                title="YouTube video player" 
-               frameborder="0" 
+               frameBorder="0" 
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-               allowfullscreen>
+               allowFullscreen>
                </iframe>
                </li>
             <li>Dynamic hang 
@@ -76,9 +76,9 @@ const stretching = () => {
               height="315" 
               src="https://www.youtube.com/embed/3CEmHJXbNpc" 
               title="YouTube video player" 
-              frameborder="0" 
+              frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
+              allowFullscreen>
                 </iframe>
                 </li>
         </ul>
@@ -100,9 +100,9 @@ const stretching = () => {
             height="315" 
             src="https://www.youtube.com/embed/zgvolE4NAH0" 
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+            allowFullscreen>
             </iframe>
             </li>
             <li>Head-to-knee-forward bend
@@ -117,9 +117,9 @@ const stretching = () => {
               height="315" 
               src="https://www.youtube.com/embed/Z3xK3trnpfw" 
               title="YouTube video player" 
-              frameborder="0" 
+              frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
+              allowFullscreen>
               </iframe>
               </li>
             <li>Overhead tricep extension 
@@ -133,9 +133,9 @@ const stretching = () => {
               height="315"
               src="https://www.youtube.com/embed/zzvDO56B0HE" 
               title="YouTube video player" 
-              frameborder="0" 
+              frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+              allowFullscreen></iframe>
               </li>
         </ul>
 
@@ -151,9 +151,9 @@ const stretching = () => {
         height="315"
         src="https://www.youtube.com/embed/pPlFSqXnbls"
         title="YouTube video player"
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+        allowFullscreen></iframe>
 
         <img src={dynamicstretch} 
               width={200}
@@ -172,9 +172,9 @@ const stretching = () => {
         height="315" 
         src="https://www.youtube.com/embed/aZ1PzhThqcU" 
         title="YouTube video player" 
-        frameborder="0" 
+        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         allowfullscreen>
+         allowFullscreen>
          </iframe>
 
         <img src={fullbodystretch} 
@@ -213,7 +213,7 @@ const stretching = () => {
         <NavLink to="/">
             <button>Previous</button>
             </NavLink>
-        <NavLink to="/cardio">
+        <NavLink to="cardio">
             <button>Next</button>
             </NavLink>
             </div>

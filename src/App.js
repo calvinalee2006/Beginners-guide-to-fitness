@@ -12,8 +12,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
     <Router>
       <Routes>
         <Route path= "/" element={<Introduction />} />
-        <Route path = '/cardio/stretching' exact element={<Stretching />} />
-        <Route path = 'cardio' exact element ={<Cardio />} />
+        <Route path = 'stretching'  element={<Stretching />} />
+        <Route path = 'cardio'  element ={<Cardio />} />
         {/* <Route path = 'WorkoutJournal' exact element={<WorkoutJournal/>}/> */}
       </Routes>
     </Router>

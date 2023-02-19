@@ -16,7 +16,7 @@ export default function introduction() {
         <p>This app is to get you moving for just 30 minutes a day! Minimum cardio or 
           small at home exercises to do to make sure you are keeping healthy and keeping your heartbeat up, 
           at the same time clearing your mind of stress for the days ahead! </p>
-          <NavLink to = '/Stretching'>
+          <NavLink to = '/stretching'>
             <button>Next</button>
             </NavLink>
       </>
