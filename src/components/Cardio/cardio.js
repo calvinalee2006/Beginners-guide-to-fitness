@@ -1,9 +1,10 @@
 import React from 'react'
 import OlderCoupleWalking from './cardioImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './cardioImages/running-buddies.jpg'
-import {NavLink} from 'react-router-dom';
+import {NavLink,useNavigate} from 'react-router-dom';
 
 const cardio =() => {
+    const navigate = useNavigate()
     return (
       <>
          <h1>Cardio</h1>
@@ -47,9 +48,7 @@ const cardio =() => {
           two youtube videos instead of one, the options are endless!  
          </p>
         <div>
-         <NavLink to="stretching">
-            <button>Previous</button>
-            </NavLink>
+        <button onClick ={() => navigate(-1)}>Previous</button>
         <NavLink to="/">
             <button>Next</button>
             </NavLink>

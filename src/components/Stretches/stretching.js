@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import bumKicks from './stretchingImages/bumkicks.jpg'
 import highknee from './stretchingImages/highknee.jpg'
 import deadhang from './stretchingImages/deadhang.jpg'
@@ -10,6 +10,8 @@ import dynamicstretch from "./stretchingImages/dynamicstretch.jpg"
 import fullbodystretch from './stretchingImages/fullbodystretch.jpg'
 
 const stretching = () => {
+
+  const navigate = useNavigate()
   return (
     <>
       <h1>Stretching</h1>
@@ -210,9 +212,7 @@ const stretching = () => {
           <li> 5-10 min cool down</li>
         </ul>
       <div>
-        <NavLink to="/">
-            <button>Previous</button>
-            </NavLink>
+        <button onClick ={() => navigate(-1)}>Previous</button>
         <NavLink to="cardio">
             <button>Next</button>
             </NavLink>
