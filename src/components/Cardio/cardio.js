@@ -6,6 +6,7 @@ import {NavLink,useNavigate} from 'react-router-dom';
 const cardio =() => {
     const navigate = useNavigate()
     return (
+     /*Add more to this segment.  */
       <>
          <h1>Cardio</h1>
      <p>From personal experience, cardio exercises is the first type of exercise a person thinks
@@ -49,7 +50,7 @@ const cardio =() => {
          </p>
         <div>
         <button onClick ={() => navigate(-1)}>Previous</button>
-        <NavLink to="/">
+        <NavLink to="WeightTraining">
             <button>Next</button>
             </NavLink>
             </div>

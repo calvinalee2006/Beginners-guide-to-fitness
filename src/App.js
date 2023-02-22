@@ -2,6 +2,7 @@ import React from 'react';
 import Introduction from './components/introduction';
 import Stretching from './components/Stretches/stretching'
 import Cardio from "./components/Cardio/cardio";
+import WeightTraining from './components/WeightTraining/WeightTraining';
 // import WorkoutJournal from "./components/noSurvey/WorkoutJournal";
 import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
         <Route path= "/" element={<Introduction />} />
         <Route path = '/stretching'  element={<Stretching />} />
         <Route path = 'stretching/cardio'  element ={<Cardio />} />
+        <Route path = '/stretching/cardio/WeightTraining' element = {< WeightTraining/>} />
         {/* <Route path = 'WorkoutJournal' exact element={<WorkoutJournal/>}/> */}
       </Routes>
     </Router>
