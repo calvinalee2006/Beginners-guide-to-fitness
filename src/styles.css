@@ -1,3 +1,9 @@
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
 .introHeading {
     font-family: 'Montserrat';
     font-size: 6rem;
@@ -6,14 +12,51 @@
     margin-top: 1rem;
 }
 
+.stretchIntro {
+    display: flex;
+}
+
 .stretchHeading {
     font-family: 'Montserrat';
     font-size: 6rem;
     letter-spacing: .5rem;
     text-align: center;
     margin-top: 1rem;
+
 }
 
 .stretchPara {
+    padding-right: 1rem;
+    font-size: 1.3rem;
     text-indent: 30px;
+}
+
+.stretchType {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.example {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.stretchName {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.authorsParagraph {
+    padding-right: 1rem;
+    font-size: 1.3rem;
+    text-indent: 30px;
+    padding-bottom: 1rem;
+}
+
+.authorsAdvice {
+    text-align: center;
 }

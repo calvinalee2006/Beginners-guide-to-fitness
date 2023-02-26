@@ -7,51 +7,61 @@ import cobra from './stretchingImages/cobra.jpg'
 import headToKnee from './stretchingImages/headtokneeforwardbend.jpg'
 import overhead from './stretchingImages/overheadtricepstretch.jpg'
 import dynamicstretch from "./stretchingImages/dynamicstretch.jpg"
-import fullbodystretch from './stretchingImages/fullbodystretch.jpg'
+import pulse from "./stretchingImages/checkpulse.jpg"
+import Stretching from './stretchingImages/stretching.jpg'
 
 const stretching = () => {
 
   const navigate = useNavigate()
   return (
     <>
-      <h1 className ="stretchHeading">Stretching</h1>
+    <h1 className ="stretchHeading">Stretching</h1>
 
-      <p className ="stretchPara">Stretching is a form of physical exercise in which a specific muscle or tendon (or muscle group)
+    <div className="container">
+    <div className = "stretchIntro">
+      <p className ="stretchPara"><b>Stretching</b> is a form of physical exercise in which a specific muscle or tendon (or muscle group)
         is deliberately flexed or stretched in order to improve muscles felt elasticity and achieve comfortable muscle tone. 
         The result is a feeling of increased muscle control, flexibility, and range of motion. Stretching is also used
-        therapeutically to alleviate cramps and to improve function in daily activities by increasing range of motion.</p>
-         <p className ="stretchPara">For beginners, stretching seems like a waste of time, and tends to remind us of how horrible the 
+        therapeutically to alleviate cramps and to improve function in daily activities by increasing range of motion.
+         For beginners, stretching seems like a waste of time, and tends to remind us of how horrible the 
             beginning of gym class was for us growing up. People skip stretching because they feel it is a waste
             of time and energy, when in reality it is a way from causing injury, helps the flexibility of your 
             muscles and gets your body ready for the challenge ahead. 
         </p>
+        <img src={Stretching} 
+              width={400}
+              height ={300}
+              alt="Someone illustrating the bum kick stretch" 
+                />
+        </div> 
+        <h2 className = "stretchType">Types of stretches</h2>
 
-        <h2>Types of stretches</h2>
-
-        <p><b>Dynamic</b> stretches are typically done before you start your workout and involves active movements
-        that help get your muscles ready for exercise.</p>
-        <p>Some examples of dynamic stretches are:</p>
-        <ul>
-            <li>Bum kicks 
+        <p className ="stretchPara"><b>Dynamic</b> stretches are typically done before you start your workout and involves active movements
+        that help get your muscles ready for exercise.<br />
+       </p>
+       <h3 className ="stretchName">Bum Kicks</h3>
+        <div className = "example">
               <img src={bumKicks} 
-              width={200}
-              height ={200}
+              width={300}
+              height ={315}
               alt="Someone illustrating the bum kick stretch" 
                 /> 
-
+              
             <iframe width="560" 
             height="315" 
             src="https://www.youtube.com/embed/oaq2UiWXof8" 
-            title="YouTube video player" frameborder="0"
+            title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowFullscreen>
             </iframe>
-            </li>
+            </div>
+            
 
-            <li>High knees 
+            <h3 className ="stretchName">High knees</h3>
+            <div className = "example"> 
               <img src ={highknee}
-               width={200} 
-               height={200} 
+               width={300} 
+               height={315} 
                alt="Someone illustrating the high knee stretch" />
                
 
@@ -59,17 +69,18 @@ const stretching = () => {
                width="560" 
                height="315" 
                src="https://www.youtube.com/embed/oDdkytliOqE" 
-               title="YouTube video player" 
-               frameBorder="0" 
+               title="YouTube video player"  
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                allowFullscreen>
                </iframe>
-               </li>
-            <li>Dynamic hang 
+               </div>
+               
+            <h3 className ="stretchName">Dynamic hang</h3> 
+            <div className = "example"> 
               <img 
               src ={deadhang} 
-              width={200} 
-              height={200} 
+              width={300} 
+              height={315} 
               alt="Someone illustrating the dynamic hang stretch" 
               />
               
@@ -78,23 +89,21 @@ const stretching = () => {
               height="315" 
               src="https://www.youtube.com/embed/3CEmHJXbNpc" 
               title="YouTube video player" 
-              frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullscreen>
                 </iframe>
-                </li>
-        </ul>
-
-        <p><b>Static</b> stretches are preferred to be performed after your workout and involves stretches that 
+                </div>
+                <br />
+        <p className ="stretchPara"><b>Static</b> stretches are preferred to be performed after your workout and involves stretches that 
         you hold in place for a period of time, without movement. This allows your muscles to loosen up, while
         increasing flexibility and range of motion.</p>
-        <p>Some Examples of static stretches are:</p>
-        <ul>
-            <li>Cobra pose  
+        
+            <h3 className ="stretchName">Cobra pose</h3>  
+            <div className = "example">
             <img 
             src ={cobra} 
-            width={200} 
-            height={200} 
+            width={300} 
+            height={315} 
             alt="Someone illustrating the cobra stretch" />
             
             <iframe 
@@ -102,69 +111,73 @@ const stretching = () => {
             height="315" 
             src="https://www.youtube.com/embed/zgvolE4NAH0" 
             title="YouTube video player" 
-            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowFullscreen>
             </iframe>
-            </li>
-            <li>Head-to-knee-forward bend
+            </div>
+            
+            <h3 className ="stretchName">Head-to-knee-forward bend</h3>
+            <div className = "example">
               <img 
               src ={headToKnee} 
-              width={200} 
-              height={200} 
+              width={300} 
+              height={315} 
               alt="Someone illustrating the head-to-knee-forward bend stretch" 
               /> 
               <iframe
               width="560" 
               height="315" 
               src="https://www.youtube.com/embed/Z3xK3trnpfw" 
-              title="YouTube video player" 
-              frameBorder="0" 
+              title="YouTube video player"  
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullscreen>
               </iframe>
-              </li>
-            <li>Overhead tricep extension 
+              </div>
+          
+            <h3 className ="stretchName">Overhead tricep extension</h3> 
+            <div className = "example">
               <img src ={overhead}
-              width={200} 
-              height={200}
+              width={300} 
+              height={315}
               alt="Someone illustrating the over-head-to-tricep extension stretch" />
               
               <iframe 
               width="560"
               height="315"
               src="https://www.youtube.com/embed/zzvDO56B0HE" 
-              title="YouTube video player" 
-              frameBorder="0" 
+              title="YouTube video player"  
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullscreen></iframe>
-              </li>
-        </ul>
+              </div>
 
-        <p>If you have a problem figuring out a Dynamic stretch that works for you, here are some stretch routines
+        <p className ="stretchPara">If you have a problem figuring out a Dynamic stretch that works for you, here are some stretch routines
           that will help you get started. At some point during your routine, you will want to make some changes and 
           maybe add something to your routine, which is completely normal! For now I would like to show you a full body routine that 
           would work for any beginner.  {/* Find youtube videos and pictures, seperate dynamic and static stretches*/}
         </p>
 
-        <h3>Dynamic Stretch examples</h3>
+        <h3 className ="stretchName">Dynamic Stretch examples</h3>
+<div className ="example">
+        <img src={dynamicstretch} 
+              width={600}
+              height ={400}
+              alt="A dynamic stretch chart" 
+                /> 
+  
         <iframe
-        width="560"
+        width="500"
         height="315"
         src="https://www.youtube.com/embed/pPlFSqXnbls"
         title="YouTube video player"
-        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullscreen></iframe>
+        allowFullscreen>          
+        </iframe>
+        </div>
 
-        <img src={dynamicstretch} 
-              width={200}
-              height ={200}
-              alt="A dynamic stretch chart" 
-                /> 
+        
 
-        <h3>Static Stretch examples</h3>
-        <p>Remember, static stretches are the main type of stretching that was performed during 
+        <h3 className ="stretchName">Static Stretch examples</h3>
+        <p className ="stretchPara">Remember, static stretches are the main type of stretching that was performed during 
           gym class in school, the main goal is loosen up and feel a bit better <b>AFTER</b> you
           have performed your workout.
         </p>
@@ -174,29 +187,23 @@ const stretching = () => {
         height="315" 
         src="https://www.youtube.com/embed/aZ1PzhThqcU" 
         title="YouTube video player" 
-        frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
          allowFullscreen>
          </iframe>
-
-        <img src={fullbodystretch} 
-              width={200}
-              height ={200}
-              alt=" A chart of static stretches" 
-                />
         {/*Later Note: Add Authors static and dynamic stretch routine */}
 
-        <h2>Benefits of stretching</h2>
+        <h2 className ="stretchName">Benefits of stretching</h2>
 
-        <p><b><i>ALWAYS</i></b> make time for stretching!! Trainers and health professionals will always break 
+        <p className ="stretchPara"><b><i>ALWAYS</i></b> make time for stretching!! Trainers and health professionals will always break 
         down the importance of stretching such as:<br />
         - Greater flexibility and range of motion <br />
         - Less pain and stiffness <br />
         - Decrease stress * Authors Note: Anyway to decrease stress is Awesome!* <br />
         - Increased blood flow </p>
 
-        <h3>Authors Advice!</h3>
-        <p>So from my experience exercising over the years, starting off with Dynamic stretches accomplishes 
+        <h3 className="authorsAdvice">Authors Advice!</h3>
+
+        <p className ="authorsParagraph">So from my experience exercising over the years, starting off with Dynamic stretches accomplishes 
           the listed goals and makes you feel better, but I always needed something more to warm me up. When I had achieved a 
           firmer grasp on a workout routine I added a small mini routine before I got the the main course. This routine was non-stop
           and I felt the blood really pumping. 
@@ -204,6 +211,8 @@ const stretching = () => {
           before your workout.
         </p>
 
+        <div className ="stretchPara">
+          <div className="example">
         <ul>
           <li>Jumping jacks: 30 reps</li>
           <li>Push-ups: 30reps</li>
@@ -211,6 +220,13 @@ const stretching = () => {
           <li>pull-ups: 30 reps</li>
           <li> 5-10 min cool down</li>
         </ul>
+        <img src={pulse} 
+              width={300}
+              height ={200}
+              alt="checking their pulse" 
+                />
+                </div>
+        </div>
       <div>
         <button onClick ={() => navigate(-1)}>Previous</button>
         <NavLink to="cardio">
@@ -218,7 +234,7 @@ const stretching = () => {
             </NavLink>
             </div>
 
-        
+            </div>
     </>
   )
 }
