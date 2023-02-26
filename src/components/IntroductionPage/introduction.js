@@ -2,12 +2,11 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 export default function introduction() {
     return (
       <>
       <header>
-        <h1>Get Moving!!</h1>
+        <h1 className="introHeading">Fitness for beginners</h1>
       </header>
       <p>In these times it is important to keep mentally and physically healthy. But with 
         life always keeping you on go, it is very easy forget your personal health. 

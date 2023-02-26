@@ -14,13 +14,13 @@ const stretching = () => {
   const navigate = useNavigate()
   return (
     <>
-      <h1>Stretching</h1>
+      <h1 className ="stretchHeading">Stretching</h1>
 
-      <p>Stretching is a form of physical exercise in which a specific muscle or tendon (or muscle group)
-        is deliberately flexed or stretched in order to improve muscles felt elasticity, flexibility and range
-        of motion. </p>
-
-        <p>For beginners, stretching seems like a waste of time, and tends to remind us of how horrible the 
+      <p className ="stretchPara">Stretching is a form of physical exercise in which a specific muscle or tendon (or muscle group)
+        is deliberately flexed or stretched in order to improve muscles felt elasticity and achieve comfortable muscle tone. 
+        The result is a feeling of increased muscle control, flexibility, and range of motion. Stretching is also used
+        therapeutically to alleviate cramps and to improve function in daily activities by increasing range of motion.</p>
+         <p className ="stretchPara">For beginners, stretching seems like a waste of time, and tends to remind us of how horrible the 
             beginning of gym class was for us growing up. People skip stretching because they feel it is a waste
             of time and energy, when in reality it is a way from causing injury, helps the flexibility of your 
             muscles and gets your body ready for the challenge ahead. 
