@@ -85,9 +85,9 @@ function WeightTraining() {
       </ol>
 
         <div>
-        <button onClick ={() => navigate(-1)}>Previous</button>
+        <button className="btn-left" onClick ={() => navigate(-1)}>Previous</button>
         <NavLink to="Diet">
-            <button>Next</button>
+            <button className="btn-right">Next</button>
             </NavLink>
             </div>
     </>
