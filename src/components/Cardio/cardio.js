@@ -8,9 +8,11 @@ const cardio =() => {
     return (
      /*Add more to this segment.  */
       <>
-         <h1>Cardio</h1>
-     <p>Cardio exercises is the first type of exercise a person thinks of when wanting to get back into shape. 
-        Cardio  is anything that will:<br /><br />
+         <h1 className="cardioHeading">Cardio</h1>
+
+         <p>Cardio exercise is physical exercises that range from low to high intensity. </p>
+     
+        {/* <p>Cardio  is anything that will:<br /><br />
 
             A. Raises your heart and breathing rate<br />
             B. Improves the function of your heart, lungs and circulatory system<br />
@@ -18,7 +20,7 @@ const cardio =() => {
      </p>
      <p>Cardio does not have to be a marathon run or climbing Mt.Everest, It can be something simple as
         going outside and playing with children or yard work. Here are some more examples of exercise: 
-        </p>
+        </p> */}
         <ul>
             <li>walking</li>
             <li>Running</li>

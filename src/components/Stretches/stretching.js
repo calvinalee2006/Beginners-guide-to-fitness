@@ -36,8 +36,11 @@ const stretching = () => {
         </div> 
         <h2 className = "stretchType">Types of stretches</h2>
 
-        <p className ="stretchPara"><b>Dynamic</b> stretches are typically done before you start your workout and involves active movements
-        that help get your muscles ready for exercise.<br />
+        <p className ="stretchPara">
+        <b>Dynamic</b> stretches is a movement-based stretch aimed at increasing blood
+        flow throughout the body while also loosening up the muscle fibers. Standard
+        dynamic stretches typically involve slow and controlled active contraction
+        of muscles. Dynamic stretches are typically done before you start your workout.<br />
        </p>
        <h3 className ="stretchName">Bum Kicks</h3>
         <div className = "example">
@@ -94,9 +97,11 @@ const stretching = () => {
                 </iframe>
                 </div>
                 <br />
-        <p className ="stretchPara"><b>Static</b> stretches are preferred to be performed after your workout and involves stretches that 
-        you hold in place for a period of time, without movement. This allows your muscles to loosen up, while
-        increasing flexibility and range of motion.</p>
+        <p className ="stretchPara">
+        <b>Static</b> stretches brings the joint to its end of motion and you hold your
+        ligament at a specific point using external force. This allows your muscles to 
+        loosen up, while increasing flexibility and range of motion. 
+        Static stretches are recommended to be performed after your workout.</p>
         
             <h3 className ="stretchName">Cobra pose</h3>  
             <div className = "example">
