@@ -10,7 +10,38 @@ const cardio =() => {
       <>
          <h1 className="cardioHeading">Cardio</h1>
 
-         <p>Cardio exercise is physical exercises that range from low to high intensity. </p>
+         <p>
+          Cardio fitness is a health-related component of physical fitness that is 
+          brought about by sustained physical activity. The type of physical activity can be low intensity
+          (walking, a moderate bicycle ride or playing at the pool) to high intensity (running, HIIT training, or biking uphill). 
+          The purpose of cardio is to raise your heart rate, raising your heart rate helps to deliver oxygen to 
+          your muscles, and delivering oxygen to your muscles can increase blood flow in your body and help with deep breathing.
+          </p>
+          
+      <div>
+        <div>
+          <p>Low-Intensity cardio</p>
+          <ul>
+            <li>Walking</li>
+            <li>Swimming</li>
+            <li>cycling</li>
+            <li>Rowing</li>
+            <li>Elliptical machine</li>
+          </ul>
+        </div>
+
+          <ul>
+            <p>High-Intensity cardio</p>
+            <li>Running</li>
+            <li>Jumping rope</li>
+            <li>H.I.I.T training (High Intensity Interval training)</li>
+            <li>CrossFit</li>
+            <li>stair climber machine</li>
+          </ul>
+      </div>    
+          
+
+
      
         {/* <p>Cardio  is anything that will:<br /><br />
 
@@ -21,14 +52,6 @@ const cardio =() => {
      <p>Cardio does not have to be a marathon run or climbing Mt.Everest, It can be something simple as
         going outside and playing with children or yard work. Here are some more examples of exercise: 
         </p> */}
-        <ul>
-            <li>walking</li>
-            <li>Running</li>
-            <li>Cycling</li>
-            <li>Swimming</li>
-            <li>Sports activities (golf, swimming, basketball, etc.)</li>
-            <li>Jumping Rope</li>
-        </ul>
 
         <p> Just to name a few!</p>
 
