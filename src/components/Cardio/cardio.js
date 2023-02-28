@@ -17,9 +17,9 @@ const cardio =() => {
           The purpose of cardio is to raise your heart rate, raising your heart rate helps to deliver oxygen to 
           your muscles, and delivering oxygen to your muscles can increase blood flow in your body and help with deep breathing.
           </p>
-          
-      <div>
-        <div>
+
+      <div className ="cardioExamples">
+        <div className="lowIntensity">
           <p>Low-Intensity cardio</p>
           <ul>
             <li>Walking</li>
@@ -30,6 +30,7 @@ const cardio =() => {
           </ul>
         </div>
 
+        <div className="highIntensity">
           <ul>
             <p>High-Intensity cardio</p>
             <li>Running</li>
@@ -38,6 +39,7 @@ const cardio =() => {
             <li>CrossFit</li>
             <li>stair climber machine</li>
           </ul>
+          </div>
       </div>    
           
 
@@ -53,7 +55,6 @@ const cardio =() => {
         going outside and playing with children or yard work. Here are some more examples of exercise: 
         </p> */}
 
-        <p> Just to name a few!</p>
 
         <p><b>Remember</b> you just need to keep the intensity high enough to challenge your heart and lungs!</p>
         <p>A study in the <i>Journal of Physiology</i> found that <b>Four to five cardio workouts a week is optimal 

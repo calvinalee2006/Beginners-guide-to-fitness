@@ -131,3 +131,8 @@
 .btn-left:hover {
     background-color: green;
 }
+
+.cardioExamples {
+    display: flex;
+    justify-content: space-around;
+}
