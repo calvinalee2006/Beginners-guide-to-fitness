@@ -1,13 +1,33 @@
 import React from 'react'
-import OlderCoupleWalking from './cardioImages/OlderCoupleWalking.jpg'
+import Slider from "react-slick";
+
+// import OlderCoupleWalking from './cardioImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './cardioImages/running-buddies.jpg'
 import {NavLink,useNavigate} from 'react-router-dom';
 
 const cardio =() => {
     const navigate = useNavigate()
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
     return (
-     /*Add more to this segment.  */
       <>
+      <Slider {...settings}>
+        <div>
+        <img src={RunningBuddies} height ={100} width ={100} alt= "Two women running" />
+        </div>
+        <div>
+          <h3> fuck it!</h3>
+        </div>
+
+      </Slider>
+      
          <h1 className="cardioHeading">Cardio</h1>
 
          <p>
@@ -66,8 +86,8 @@ const cardio =() => {
             makes exercise easier and will help your mind at ease. <br />
             <div>
               {/*Maybe a carousel of people running should be made later in the styling processa */}
-      <img src={OlderCoupleWalking} width={200} height ={200} alt= "This is an older couple walking" />
-      <img src={RunningBuddies} width={200} height ={200} alt= "Two women running" />
+      
+      
      </div>
             -If the weather is not cooperating and you have to stay inside, we recommend using youtube and finding a nice 30 min cardio workout! 
             <p>Here are two examples of beginner exercise videos that you can try! If those are not to your liking, you can always visit <a href="https://www.youtube.com/">youtube</a> and find one that fits your speed.</p>
