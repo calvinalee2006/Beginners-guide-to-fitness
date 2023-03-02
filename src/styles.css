@@ -132,7 +132,13 @@
     background-color: green;
 }
 
-.cardioExamples {
+.lowIntensity {
+    height: 150px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.sliderOne {
+    justify-content: space-between;
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Slider from "react-slick";
-
 // import OlderCoupleWalking from './cardioImages/OlderCoupleWalking.jpg'
 import RunningBuddies from './cardioImages/running-buddies.jpg'
 import {NavLink,useNavigate} from 'react-router-dom';
@@ -18,18 +17,10 @@ const cardio =() => {
 
     return (
       <>
-      <Slider {...settings}>
-        <div>
-        <img src={RunningBuddies} height ={100} width ={100} alt= "Two women running" />
-        </div>
-        <div>
-          <h3> fuck it!</h3>
-        </div>
-
-      </Slider>
+      
       
          <h1 className="cardioHeading">Cardio</h1>
-
+         <div className="container">
          <p>
           Cardio fitness is a health-related component of physical fitness that is 
           brought about by sustained physical activity. The type of physical activity can be low intensity
@@ -37,18 +28,30 @@ const cardio =() => {
           The purpose of cardio is to raise your heart rate, raising your heart rate helps to deliver oxygen to 
           your muscles, and delivering oxygen to your muscles can increase blood flow in your body and help with deep breathing.
           </p>
-
-      <div className ="cardioExamples">
-        <div className="lowIntensity">
           <p>Low-Intensity cardio</p>
+        <div className="lowIntensity">
           <ul>
             <li>Walking</li>
             <li>Swimming</li>
             <li>cycling</li>
             <li>Rowing</li>
-            <li>Elliptical machine</li>
+            <li>Elliptical</li>
           </ul>
+
+          <div className = "sliderOne" >
+      <Slider {...settings}>
+        <div>
+        <img src={RunningBuddies} alt= "Two women running" />
         </div>
+        <div>
+        <img src={RunningBuddies}  alt= "Two women running" />
+        </div>
+      </Slider>
+      </div>
+
+        
+        
+      
 
         <div className="highIntensity">
           <ul>
@@ -120,6 +123,7 @@ const cardio =() => {
         <NavLink to="WeightTraining">
             <button className="btn-right">Next</button>
             </NavLink>
+            </div>
             </div>
       </>
     )
