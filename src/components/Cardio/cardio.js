@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import RunningBuddies from './cardioImages/running-buddies.jpg'
 import {NavLink,useNavigate} from 'react-router-dom';
 
-const cardio =() => {
+export default function Cardio() {
     const navigate = useNavigate()
 
     const settings = {
@@ -28,32 +28,49 @@ const cardio =() => {
           The purpose of cardio is to raise your heart rate, raising your heart rate helps to deliver oxygen to 
           your muscles, and delivering oxygen to your muscles can increase blood flow in your body and help with deep breathing.
           </p>
+
           <p>Low-Intensity cardio</p>
-        <div className="lowIntensity">
-          <ul>
-            <li>Walking</li>
-            <li>Swimming</li>
-            <li>cycling</li>
-            <li>Rowing</li>
-            <li>Elliptical</li>
-          </ul>
+          
+          <div className="lowIntensity">
+  <ul>
+    <li>Walking</li>
+    <li>Swimming</li>
+    <li>cycling</li>
+    <li>Rowing</li>
+    <li>Elliptical</li>
+  </ul>
 
-          <div className = "sliderOne" >
-      <Slider {...settings}>
-        <div>
-        <img src={RunningBuddies} alt= "Two women running" />
-        </div>
-        <div>
-        <img src={RunningBuddies}  alt= "Two women running" />
-        </div>
-      </Slider>
+  <Slider className="sliderOne" {...settings}>
+      <div>
+        <img
+          src={RunningBuddies}
+          alt="Two women running"
+          style={{ width: '100%' }}
+        />
       </div>
+      <div>
+        <img
+          src={RunningBuddies}
+          alt="Two women running"
+          style={{ width: '100%' }}
+        />
+      </div>
+    </Slider>
+   
+</div>;
+ 
 
-        
-        
-      
 
-        <div className="highIntensity">
+
+
+
+
+
+
+
+
+
+        {/* <div className="highIntensity">
           <ul>
             <p>High-Intensity cardio</p>
             <li>Running</li>
@@ -62,8 +79,8 @@ const cardio =() => {
             <li>CrossFit</li>
             <li>stair climber machine</li>
           </ul>
-          </div>
-      </div>    
+          </div> */}
+       
           
 
 
@@ -129,4 +146,4 @@ const cardio =() => {
     )
   }
 
-export default cardio
+

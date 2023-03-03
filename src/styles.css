@@ -133,12 +133,13 @@
 }
 
 .lowIntensity {
-    height: 150px;
-    width: 100%;
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
     background-color: whitesmoke;
+
 }
 
 .sliderOne {
-    justify-content: space-between;
+    width: 400px;
 }

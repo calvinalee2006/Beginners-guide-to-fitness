@@ -8,9 +8,9 @@ import headToKnee from './stretchingImages/headtokneeforwardbend.jpg'
 import overhead from './stretchingImages/overheadtricepstretch.jpg'
 import dynamicstretch from "./stretchingImages/dynamicstretch.jpg"
 import pulse from "./stretchingImages/checkpulse.jpg"
-import Stretching from './stretchingImages/stretching.jpg'
+import classStretch from './stretchingImages/stretching.jpg'
 
-const stretching = () => {
+export default function Stretching()  {
 
   const navigate = useNavigate()
   return (
@@ -28,7 +28,7 @@ const stretching = () => {
             of time and energy, when in reality it is a way from causing injury, helps the flexibility of your 
             muscles and gets your body ready for the challenge ahead. 
         </p>
-        <img src={Stretching} 
+        <img src={classStretch} 
               width={400}
               height ={300}
               alt="Someone illustrating the bum kick stretch" 
@@ -243,4 +243,4 @@ const stretching = () => {
   )
 }
 
-export default stretching
+

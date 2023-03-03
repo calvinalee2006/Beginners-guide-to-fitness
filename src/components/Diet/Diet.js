@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
 
-function Diet() {
+export default function Diet() {
     const navigate = useNavigate()
   return (
     <>
@@ -46,4 +46,4 @@ function Diet() {
   )
 }
 
-export default Diet
+

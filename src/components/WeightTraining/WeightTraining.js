@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
 
-function WeightTraining() {
+ export default function WeightTraining() {
     const navigate = useNavigate()
   return (
     <>
@@ -94,4 +94,4 @@ function WeightTraining() {
   )
 }
 
-export default WeightTraining
+
