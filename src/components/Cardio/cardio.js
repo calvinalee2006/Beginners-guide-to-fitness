@@ -1,27 +1,35 @@
 import React from 'react'
 import Slider from "react-slick";
-// import OlderCoupleWalking from './cardioImages/OlderCoupleWalking.jpg'
+import AdultBiking from "./cardioImages/active_adult_biking.jpg";
+import Elliptical from "./cardioImages/Elliptical.jpg";
+import Rowing from "./cardioImages/rowing.jpg";
+import Pool from "./cardioImages/swimmingatthepool.jpg";
+import MowingGrass from "./cardioImages/yardwork.jpg";
 import RunningBuddies from './cardioImages/running-buddies.jpg'
+import RunFast from "./cardioImages/running.jpg";
+import SpinClass from "./cardioImages/spinning.jpg";
+import TabataClass from "./cardioImages/tabata.jpg";
+import Crossfit from "./cardioImages/crossfit.jpg"
 import {NavLink,useNavigate} from 'react-router-dom';
 
 export default function Cardio() {
     const navigate = useNavigate()
 
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1
     };
 
     return (
       <>
-      
-      
          <h1 className="cardioHeading">Cardio</h1>
          <div className="container">
-         <p>
+         <p className="cardioArticle">
           Cardio fitness is a health-related component of physical fitness that is 
           brought about by sustained physical activity. The type of physical activity can be low intensity
           (walking, a moderate bicycle ride or playing at the pool) to high intensity (running, HIIT training, or biking uphill). 
@@ -29,15 +37,23 @@ export default function Cardio() {
           your muscles, and delivering oxygen to your muscles can increase blood flow in your body and help with deep breathing.
           </p>
 
-          <p>Low-Intensity cardio</p>
+          <p className ="typeOne">Low-Intensity cardio</p>
           
           <div className="lowIntensity">
-  <ul>
-    <li>Walking</li>
-    <li>Swimming</li>
-    <li>cycling</li>
-    <li>Rowing</li>
-    <li>Elliptical</li>
+  <ul className ="lowIntensityList">
+    <li class ="dashed">Walking</li>
+    <li class ="dashed">Swimming</li>
+    <li class ="dashed">cycling</li>
+    <li class ="dashed">Rowing</li>
+    <li class ="dashed">Elliptical</li>
+    <li class ="dashed">Yard Work</li>
+  </ul>
+  <ul className ="lowIntensityList">
+    <li class ="dashed">Yoga</li>
+    <li class ="dashed">Physical activity with your partner</li>
+    <li class ="dashed">Dancing</li>
+    <li class ="dashed">Hiking</li>
+    <li class ="dashed">Tai Chi</li>
   </ul>
 
   <Slider className="sliderOne" {...settings}>
@@ -50,36 +66,98 @@ export default function Cardio() {
       </div>
       <div>
         <img
-          src={RunningBuddies}
-          alt="Two women running"
+          src={AdultBiking}
+          alt="Two older people riding bikes"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={Elliptical}
+          alt="women on an elliptical machine"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={Rowing}
+          alt="Man rowing"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={Pool}
+          alt="women at the pool"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={MowingGrass}
+          alt="Kid doing Yard work"
+          style={{ width: '100%', }}
+        />
+      </div>
+    </Slider>  
+</div>
+ <p className ="typeTwo"> High Intensity cardio</p>
+
+         <div className="highIntensity">
+          <Slider className="sliderTwo" {...settings}>
+      <div>
+        <img
+          src={RunFast}
+          alt="People running a marathon"
           style={{ width: '100%' }}
         />
       </div>
-    </Slider>
-   
-</div>;
- 
-
-
-
-
-
-
-
-
-
-
-
-        {/* <div className="highIntensity">
-          <ul>
-            <p>High-Intensity cardio</p>
-            <li>Running</li>
-            <li>Jumping rope</li>
-            <li>H.I.I.T training (High Intensity Interval training)</li>
-            <li>CrossFit</li>
-            <li>stair climber machine</li>
+      <div>
+        <img
+          src={SpinClass}
+          alt="People in a spinning class"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={TabataClass}
+          alt="women in Tabata class"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={Rowing}
+          alt="Man rowing"
+          style={{ width: '100%', }}
+        />
+        </div>
+        <div>
+        <img
+          src={Crossfit}
+          alt="women at the pool"
+          style={{ width: '100%', }}
+        />
+        </div>
+      
+    </Slider>  
+    <ul className ="highIntensityList">
+            <li class ="dashed">Running</li>
+            <li class ="dashed">Jumping rope</li>
+            <li class ="dashed">H.I.I.T training </li>
+            <li class ="dashed">CrossFit</li>
+            <li class ="dashed">stair climber machine</li>
           </ul>
-          </div> */}
+          <ul className ="highIntensityList">
+            <li class ="dashed">Spinning</li>
+            <li class ="dashed">Sprinting</li>
+            <li class ="dashed">Circuit training</li>
+            <li class ="dashed">Swimming</li>
+            <li class ="dashed">Tabata Training</li>
+          </ul>
+          </div>
+           
        
           
 

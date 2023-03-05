@@ -132,14 +132,78 @@
     background-color: green;
 }
 
-.lowIntensity {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    background-color: whitesmoke;
+.cardioArticle {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
 
+.lowIntensity {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: gray;
 }
 
 .sliderOne {
+    padding-top: 1rem;
+    padding-right: 1rem;
     width: 400px;
+}
+
+.typeOne {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 10px #d51ccb;
+    padding: 20px;
+    margin: 2rem;
+}
+
+
+.lowIntensityList {
+    margin-top: 1rem;
+    float: left;
+}
+
+.dashed {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.0em;
+}
+
+.dashed:before {
+    content: "- ";
+    position: absolute;
+    left: 0;
+}
+
+.typeTwo {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 10px #d51ccb;
+    padding: 20px;
+    margin: 2rem;
+}
+
+.sliderTwo {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    width: 400px;
+}
+
+.highIntensity {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: gray;
+}
+
+.highIntensityList {
+    margin-top: 1rem;
+    float: right;
 }
