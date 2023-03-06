@@ -43,16 +43,16 @@ export default function Cardio() {
   <ul className ="lowIntensityList">
     <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Walking"> Walking</a></li>
     <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Swimming_(sport)">  Swimming</a></li>
-    <li class ="dashed">cycling</li>
-    <li class ="dashed">Rowing</li>
-    <li class ="dashed">Elliptical</li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Cycling"> cycling</a></li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Rowing_(sport)"> Rowing</a></li>
+    <li class ="dashed">Elliptical Machine</li>
     <li class ="dashed">Yard Work</li>
   </ul>
   <ul className ="lowIntensityList">
-    <li class ="dashed">Yoga</li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Yoga">Yoga</a></li>
     <li class ="dashed">Physical activity with your partner</li>
-    <li class ="dashed">Dancing</li>
-    <li class ="dashed">Hiking</li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Dance"> Dancing</a></li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Hiking">Hiking</a></li>
     <li class ="dashed"><a href= "https://en.wikipedia.org/wiki/Tai_chi">Tai Chi</a></li>
   </ul>
 
@@ -143,18 +143,17 @@ export default function Cardio() {
       
     </Slider>  
     <ul className ="highIntensityList">
-            <li class ="dashed">Running</li>
-            <li class ="dashed">Jumping rope</li>
-            <li class ="dashed">H.I.I.T training </li>
-            <li class ="dashed">CrossFit</li>
+            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Running">Running</a></li>
+            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Skipping_rope">Jumping rope</a></li>
+            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/High-intensity_interval_training">H.I.I.T training</a> </li>
+            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/CrossFit">CrossFit</a></li>
             <li class ="dashed">stair climber machine</li>
           </ul>
           <ul className ="highIntensityList">
-            <li class ="dashed">Spinning</li>
-            <li class ="dashed">Sprinting</li>
-            <li class ="dashed">Circuit training</li>
+            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Spinning_(cycling)">Spinning</a></li>
+            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Sprint_(running)">Sprinting</a></li>
+            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Circuit_training">Circuit training</a></li>
             <li class ="dashed">Swimming</li>
-            <li class ="dashed">Tabata Training</li>
           </ul>
           </div>
            

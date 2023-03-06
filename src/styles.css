@@ -207,3 +207,17 @@
     margin-top: 1rem;
     float: right;
 }
+
+.dashed {
+    color: white;
+}
+
+.dashed:visited {
+    color: #7b38d8
+}
+
+.dashed:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
