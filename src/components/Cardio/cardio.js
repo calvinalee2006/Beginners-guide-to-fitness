@@ -41,8 +41,8 @@ export default function Cardio() {
           
           <div className="lowIntensity">
   <ul className ="lowIntensityList">
-    <li class ="dashed">Walking</li>
-    <li class ="dashed">Swimming</li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Walking"> Walking</a></li>
+    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Swimming_(sport)">  Swimming</a></li>
     <li class ="dashed">cycling</li>
     <li class ="dashed">Rowing</li>
     <li class ="dashed">Elliptical</li>
@@ -53,7 +53,7 @@ export default function Cardio() {
     <li class ="dashed">Physical activity with your partner</li>
     <li class ="dashed">Dancing</li>
     <li class ="dashed">Hiking</li>
-    <li class ="dashed">Tai Chi</li>
+    <li class ="dashed"><a href= "https://en.wikipedia.org/wiki/Tai_chi">Tai Chi</a></li>
   </ul>
 
   <Slider className="sliderOne" {...settings}>
