@@ -233,3 +233,33 @@
     display: flex;
     justify-content: space-between;
 }
+
+.strengthContainer {
+    width: 90%;
+    font-size: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.strengthHeading {
+    font-family: 'Montserrat';
+    font-size: 6rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-bottom: solid 10px #7b38d8;
+}
+
+.dummbellPressPic {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dummbellPressPic img {
+    border-radius: 10% / 50%;
+}
+
+.firstStrengthP {
+    margin-top: 2rem;
+}

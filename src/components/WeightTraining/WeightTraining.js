@@ -1,20 +1,27 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
-
+import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
  export default function WeightTraining() {
     const navigate = useNavigate()
   return (
     <>
-      <h1>Strength training </h1>
+    
+      <h1 className="strengthHeading">Strength training </h1>
+
+      <div className="dummbellPressPic">
+        <img  src={DummbellPress} alt="Young man doing dumbbell press"/>
+      </div>
+      
+      <div className ="strengthContainer">
+        <div className="firstStrengthP">
       <p>According to websters dictionary, strength training is a system of physical conditioning in which muscles are 
-        exercised by being worked against an opposing force to increase strength.
-      <br />
-      When a person thinks about strength training they think about olympic weight lifters screaming and grunting to get that 
+        exercised by being worked against an opposing force to increase strength. When a person thinks about strength training they think about olympic weight lifters screaming and grunting to get that 
         one repetition of 800lbs off the floor. Or they think about a solid physic that is beach ready, no matter what time of year it is.
-        <br />
+        <br /><br />
         Those thoughts are possible and can be achieved! One thing people tend to forget, is that to reach those goals they take, time, effort, and 
         dedication and more importantly the will to start from the beginning. 
       </p>
+      </div>
 
       <h2>Types of strength training</h2>
       <ul>
@@ -89,6 +96,7 @@ import {NavLink,useNavigate} from 'react-router-dom';
         <NavLink to="Diet">
             <button className="btn-right">Next</button>
             </NavLink>
+            </div>
             </div>
     </>
   )
