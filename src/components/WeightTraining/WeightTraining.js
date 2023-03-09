@@ -23,7 +23,8 @@ import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
       </p>
       </div>
 
-      <h2>Types of strength training</h2>
+      <h2 className ="typesOfStrength">Types of strength training</h2>
+ 
       <ul>
       <li><b>Muscular hypertrophy</b> - This type of strength training uses moderate-to-heavy weights to stimulate muscle growth.</li>
       <li><b>Muscular endurance</b> - This refers to your muscles ability to sustain exercise for a period of time. Usually involves high reps
@@ -32,13 +33,12 @@ import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
       <li><b>Maximum muscular strength</b> - This tye of exercise involves low reps (usually 2-6) and heavy weight to improve overall strength.</li>
       <li><b>Explosive power</b> This training combines power and speed to improve your power output.</li>
       </ul>
-      <p>In our advice for beginners, it would be more beneficial to focus only on muscular endurance and circuit training at this point. When you are building your muscles, 
-        you want to have that motivation and endurance to keep your body moving during your circuit training. 
+      <p>Some advice for beginners, it would be more beneficial to focus only on muscular endurance and circuit training at this point. When you are building your muscles, 
+        you want to have that motivation and endurance to keep your body moving during any type of training. 
       </p>
 
-      <h2>Best start for beginners</h2>
+      <h2 className ="startForBegin">Best start for beginners</h2>
       <p>A lot of people commonly think that a person has to have a full gym to really get the muscle growth process going, when in reality body weight workouts work just as well!!</p>
-      <p>Workouts such as:</p>
       <ul>
         <li>Push-ups</li>
         <li>Squats</li>
@@ -48,7 +48,7 @@ import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
         <li>Crunches</li>
         <li>Sit-ups</li>
       </ul>
-      <p>All of the workouts in the example are great great to use in a circuit</p>
+      <p>All of the workouts in the example are great to use in a circuit</p>
       <p>A example of a circuit would be something like</p>
       <p>5 rounds</p>
       <ul>
@@ -75,7 +75,7 @@ import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
         <li>1 minute plank</li>
       </ul>
 
-      <h2>There are many advantages of strength training such as:</h2>
+      <h2 className="startForBegin" >Advantages of strength training</h2>
       <ol>
         <li>Makes you stronger</li>
         <li>Burs calories efficiently</li>

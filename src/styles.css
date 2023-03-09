@@ -263,3 +263,21 @@
 .firstStrengthP {
     margin-top: 2rem;
 }
+
+.typesOfStrength {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 10px #d51ccb;
+    padding: 20px;
+    margin: 2rem;
+}
+
+.startForBegin {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 10px #d51ccb;
+    padding: 20px;
+    margin: 2rem;
+}
