@@ -1,7 +1,10 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
 import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
- export default function WeightTraining() {
+
+
+
+export default function WeightTraining() {
     const navigate = useNavigate()
   return (
     <>
