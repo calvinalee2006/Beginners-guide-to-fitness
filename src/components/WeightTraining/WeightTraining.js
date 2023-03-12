@@ -1,6 +1,4 @@
 import React from 'react'
-import {useEffect} from 'react';
-import {withRouter} from 'react-router-dom';
 import {NavLink,useNavigate} from 'react-router-dom';
 import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
 import Plank from "./WeightTrainingImages/Plank.jpg"
