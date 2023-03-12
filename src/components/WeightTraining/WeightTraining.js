@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
 import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
-
+import Plank from "./WeightTrainingImages/Plank.jpg"
 
 
 export default function WeightTraining() {
@@ -41,30 +41,52 @@ export default function WeightTraining() {
       </p>
 
       <h2 className ="startForBegin">Best start for beginners</h2>
-      <p>A lot of people commonly think that a person has to have a full gym to really get the muscle growth process going, when in reality body weight workouts work just as well!!</p>
-      <ul>
-        <li>Push-ups</li>
-        <li>Squats</li>
-        <li>Planks</li>
-        <li>Pull-ups</li>
-        <li>Lunges</li>
-        <li>Crunches</li>
-        <li>Sit-ups</li>
-      </ul>
-      <p>All of the workouts in the example are great to use in a circuit</p>
-      <p>A example of a circuit would be something like</p>
-      <p>5 rounds</p>
+      <p>A lot of people commonly think that a person has to have a full gym to really get the muscle growth process going, when in reality calisthenics(body weight workouts) work just as well!!
+        Calisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups, such as standing, grasping, pushing etc. These exercises are often performed 
+        rhythmically and with minimal equipment.
+      </p>
+     
+      {/* <a href="https://www.beachbodyondemand.com/blog/what-is-cardio">Here</a> */}
+     <div className ="beginnerBody">
+        <div>
+          <a href ="https://youtu.be/0GsVJsS6474">Push-ups</a>
+          <img src={require("./WeightTrainingImages/properPushUp.gif")} alt="Gif of a man performing a push-up using the correct form" width={200} height={200} />
+          </div>
+        <div>
+          <a href ="https://youtu.be/z3XQ7T4-abQ">Squats</a>
+          <img src={require("./WeightTrainingImages/squat.gif")} alt="Gif example of a an performing a squat exercise" width={200} height={200} />
+          </div>
+        <div>
+          <a href="https://youtu.be/f_O-CzKSSY8">Planks</a>
+          <img src={Plank} alt="Diagram of a woman performing the plank exercise"  width={200} height={200}/>
+          </div>
+        <div>
+          <a href ="https://youtube.com/shorts/GSGdj-2B0hM?feature=share">Pull-ups</a>
+          <img src={require("./WeightTrainingImages/pull-ups.gif")} alt="gif of someone performing a pull-up" width={200} height={200} />
+          </div>
+        <div>
+          <a href ="https://youtu.be/fO3dKSQayfg">Lunges</a>
+          <img src={require("./WeightTrainingImages/lunges.gif")} alt ="gif of a man performing lunges" width ={200} height={200} />
+          </div>
+        <div>
+          <a href="https://youtube.com/shorts/VZnY9KoO3Ng?feature=share">Sit-ups</a>
+        <img src={require("./WeightTrainingImages/sit-ups.gif")} alt="gif of a man performing sit-ups" width={200} height={200} />
+        </div>
+        </div>
+      
+      <p>All of the workouts in the example are great to use in a circuit. A example of a circuit would be:</p>
+      <p>3 rounds</p>
       <ul>
         <li>20 push-ups</li>
         <li>30 squats</li>
-        <li>20 crunches</li>
-        <li>30 tricep pushes</li>
+        <li>20 sit-ups</li>
+        <li>30 lunges</li>
         <li> 1 minute plank</li>
-      </ul>
-      <p>3-5 minute resting periods between each round</p>
+      </ul> */
+      /* <p>3-5 minute resting periods between each round</p>
       <p>We are not against using equipment for your workouts! But, we feel that if you want a slow comfortable start into weight training, we would
-        highly recommend starting with some bodyweight training. But if you are interested in spending some money (either getting a gym membership or using 
-        weights at home), we recommend investing in some fre weights such as dumbbells or kettlebells and if you have the room to use a barbell, that would also be 
+        highly recommend starting with some calisthenics. But if you are interested in spending some money (either getting a gym membership or using 
+        weights at home), we recommend investing in some free weights such as dumbbells or kettlebells and if you have the room to use a barbell, that would also be 
         a beneficial investment. 
       </p>
       <p>Using equipment widens your variety of workouts and gives you the first look at muscular hypertrophy.</p>
