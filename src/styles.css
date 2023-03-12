@@ -293,3 +293,23 @@
     width: 400px;
     height: 400px;
 }
+
+.circuitExamples {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circuitEx1 {
+    background-color: #5b5c63;
+    color: white;
+}
+
+.circuitEx2 {
+    background-color: #414349;
+    color: white;
+}
+
+.circuitEx3 {
+    background-color: #655b5b;
+    color: white;
+}

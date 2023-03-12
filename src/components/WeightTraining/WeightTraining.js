@@ -46,35 +46,37 @@ export default function WeightTraining() {
         rhythmically and with minimal equipment.
       </p>
      
-      {/* <a href="https://www.beachbodyondemand.com/blog/what-is-cardio">Here</a> */}
      <div className ="beginnerBody">
         <div>
-          <a href ="https://youtu.be/0GsVJsS6474">Push-ups</a>
+          <a href ="https://youtu.be/0GsVJsS6474"><p>Push-ups</p></a>
           <img src={require("./WeightTrainingImages/properPushUp.gif")} alt="Gif of a man performing a push-up using the correct form" width={200} height={200} />
           </div>
         <div>
-          <a href ="https://youtu.be/z3XQ7T4-abQ">Squats</a>
+          <a href ="https://youtu.be/z3XQ7T4-abQ"><p>Squats</p></a>
           <img src={require("./WeightTrainingImages/squat.gif")} alt="Gif example of a an performing a squat exercise" width={200} height={200} />
           </div>
         <div>
-          <a href="https://youtu.be/f_O-CzKSSY8">Planks</a>
+          <a href="https://youtu.be/f_O-CzKSSY8"><p>Planks</p></a>
           <img src={Plank} alt="Diagram of a woman performing the plank exercise"  width={200} height={200}/>
           </div>
         <div>
-          <a href ="https://youtube.com/shorts/GSGdj-2B0hM?feature=share">Pull-ups</a>
+          <a href ="https://youtube.com/shorts/GSGdj-2B0hM?feature=share"><p>Pull-ups</p></a>
           <img src={require("./WeightTrainingImages/pull-ups.gif")} alt="gif of someone performing a pull-up" width={200} height={200} />
           </div>
         <div>
-          <a href ="https://youtu.be/fO3dKSQayfg">Lunges</a>
+          <a href ="https://youtu.be/fO3dKSQayfg"><p>Lunges</p></a>
           <img src={require("./WeightTrainingImages/lunges.gif")} alt ="gif of a man performing lunges" width ={200} height={200} />
           </div>
         <div>
-          <a href="https://youtube.com/shorts/VZnY9KoO3Ng?feature=share">Sit-ups</a>
+          <a href="https://youtube.com/shorts/VZnY9KoO3Ng?feature=share"><p>Sit-ups</p></a>
         <img src={require("./WeightTrainingImages/sit-ups.gif")} alt="gif of a man performing sit-ups" width={200} height={200} />
         </div>
         </div>
       
       <p>All of the workouts in the example are great to use in a circuit. A example of a circuit would be:</p>
+      <div className="circuitExamples">
+
+      <div className="circuitEx1">
       <p>3 rounds</p>
       <ul>
         <li>20 push-ups</li>
@@ -82,14 +84,69 @@ export default function WeightTraining() {
         <li>20 sit-ups</li>
         <li>30 lunges</li>
         <li> 1 minute plank</li>
-      </ul> */
-      /* <p>3-5 minute resting periods between each round</p>
+      </ul> 
+       <p>3-5 minute resting periods</p>
+       </div >
+
+      <div className="circuitEx2">
+      <p>3 Rounds</p>
+       <ul>
+        <li>25 Jumping jacks</li>
+        <li>25 Tricep push-up</li>
+        <li>Plank till failure</li>
+        <li>100 Mountain climbers (1 per leg)</li>
+        <li>10 Burpees</li>
+       </ul>
+       <p>3-5 minute resting periods </p>
+       </div>
+
+      <div className="circuitEx3">
+       <p>10 Rounds</p>
+       <ul>
+        <li>10 Burpees</li>
+        <li>10 Sit-Ups</li>
+        <li>10 Push-Ups</li>
+        <li>10 Squats</li>
+        <li>10 Mountain Climbers</li>
+       </ul>
+       <p>1 minute resting periods </p>
+          </div>
+       </div>
+       <br />
       <p>We are not against using equipment for your workouts! But, we feel that if you want a slow comfortable start into weight training, we would
-        highly recommend starting with some calisthenics. But if you are interested in spending some money (either getting a gym membership or using 
-        weights at home), we recommend investing in some free weights such as dumbbells or kettlebells and if you have the room to use a barbell, that would also be 
-        a beneficial investment. 
+        highly recommend starting with some calisthenics. But if you are interested in spending some money, we recommend investing in some free weights
+        such as dumbbells or kettlebells and if you have the room to use a barbell, that would also be 
+        a beneficial investment. If you don't have the room or you feel the need to invest in free weights, you can also join your local Gym or health club! 
       </p>
       <p>Using equipment widens your variety of workouts and gives you the first look at muscular hypertrophy.</p>
+      
+ <div className ="beginnerBody">
+        <div>
+          <a href ="https://youtu.be/3OZ2MT_5r3Q"><p>Dumbbell Curls</p></a>
+          <img src={require("./WeightTrainingImages/dumbbell-curl.gif")} alt="Gif of a man performing dumbbell curls using the correct form" width={200} height={200} />
+          </div>
+        <div>
+          <a href ="https://youtu.be/a5zhnubunoE"><p>Deadlift</p></a>
+          <img src={require("./WeightTrainingImages/deadlift.gif")} alt="Gif deadlift using proper form" width={200} height={200} />
+          </div>
+        <div>
+          <a href="https://youtu.be/RsobeWfbBcY"><p>Bench Press</p></a>
+          <img src={require("./WeightTrainingImages/Bench-Press.gif")} alt="Diagram a man performing the bench press"  width={200} height={200}/>
+          </div>
+        <div>
+          <a href ="https://youtube.com/shorts/GSGdj-2B0hM?feature=share"><p>Dumbbell front raise</p></a>
+          <img src={require("./WeightTrainingImages/pull-ups.gif")} alt="gif of someone performing a pull-up" width={200} height={200} />
+          </div>
+        <div>
+          <a href ="https://youtu.be/fO3dKSQayfg"><p>Dumbbell Row</p></a>
+          <img src={require("./WeightTrainingImages/lunges.gif")} alt ="gif of a man performing lunges" width ={200} height={200} />
+          </div>
+        <div>
+          <a href="https://youtube.com/shorts/VZnY9KoO3Ng?feature=share"><p>Dumbbell lunges</p></a>
+        <img src={require("./WeightTrainingImages/sit-ups.gif")} alt="gif of a man performing sit-ups" width={200} height={200} />
+        </div>
+        </div>
+
       <p>A good example of circuit training using weights would be:</p>
       <p>5 rounds 3-5 minute rest</p>
       <ul>
