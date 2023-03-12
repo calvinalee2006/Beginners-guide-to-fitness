@@ -1,4 +1,6 @@
 import React from 'react'
+import {useEffect} from 'react';
+import {withRouter} from 'react-router-dom';
 import {NavLink,useNavigate} from 'react-router-dom';
 import DummbellPress from "./WeightTrainingImages/dumbbellPress.jpg"
 import Plank from "./WeightTrainingImages/Plank.jpg"
@@ -8,11 +10,10 @@ export default function WeightTraining() {
     const navigate = useNavigate()
   return (
     <>
-    
       <h1 className="strengthHeading">Strength training </h1>
 
       <div className="dummbellPressPic">
-        <img  src={DummbellPress} alt="Young man doing dumbbell press"/>
+        <img src={DummbellPress} alt="Young man doing dumbbell press"/>
       </div>
       
       <div className ="strengthContainer">
@@ -41,9 +42,11 @@ export default function WeightTraining() {
       </p>
 
       <h2 className ="startForBegin">Best start for beginners</h2>
-      <p>A lot of people commonly think that a person has to have a full gym to really get the muscle growth process going, when in reality calisthenics(body weight workouts) work just as well!!
+      <p>A lot of people commonly think that a person has to have a full gym to really get the muscle growth process going, when in reality calisthenics (body weight workouts) work just as well!
         Calisthenics is a form of strength training consisting of a variety of movements that exercise large muscle groups, such as standing, grasping, pushing etc. These exercises are often performed 
-        rhythmically and with minimal equipment.
+        rhythmically and with minimal equipment. Some examples types of these exercises are:<br />
+        <br />
+        Click the name of the exercise to learn more about it and how to have proper form when performing the exercise.
       </p>
      
      <div className ="beginnerBody">
@@ -73,43 +76,46 @@ export default function WeightTraining() {
         </div>
         </div>
       
-      <p>All of the workouts in the example are great to use in a circuit. A example of a circuit would be:</p>
-      <div className="circuitExamples">
+      <p>
+        All of the workouts in the example are great to use in a circuit workouts. Here are a few author made examples of circuit workouts that can be done at home:
+      </p>
 
-      <div className="circuitEx1">
-      <p>3 rounds</p>
+      <div className="circuitExamples">
+        <div className="circuitEx1">
+      <p>3 rounds <br /> 
+      3-5 minute resting periods</p>
       <ul>
         <li>20 push-ups</li>
         <li>30 squats</li>
         <li>20 sit-ups</li>
         <li>30 lunges</li>
-        <li> 1 minute plank</li>
+        <li>1 minute plank</li>
       </ul> 
-       <p>3-5 minute resting periods</p>
        </div >
 
       <div className="circuitEx2">
-      <p>3 Rounds</p>
+      <p>3 Rounds <br />
+      3-5 minute resting periods
+      </p>
        <ul>
-        <li>25 Jumping jacks</li>
-        <li>25 Tricep push-up</li>
+        <li>25 Jumping Jacks</li>
+        <li><a href="https://youtu.be/IrvvfLDyr7k" >25 Tricep push-up</a></li>
         <li>Plank till failure</li>
-        <li>100 Mountain climbers (1 per leg)</li>
-        <li>10 Burpees</li>
+        <li><a href ="https://youtu.be/zT-9L3CEcmk"> 100 Mountain climbers (1 per leg)</a></li>
+        <li><a href = "https://youtu.be/qLBImHhCXSw">10 Burpees</a></li>
        </ul>
-       <p>3-5 minute resting periods </p>
        </div>
 
       <div className="circuitEx3">
-       <p>10 Rounds</p>
+       <p>10 Rounds <br />
+       1 minute resting periods </p>
        <ul>
-        <li>10 Burpees</li>
+        <li><a href = "https://youtu.be/qLBImHhCXSw">10 Burpees</a></li>
         <li>10 Sit-Ups</li>
         <li>10 Push-Ups</li>
         <li>10 Squats</li>
-        <li>10 Mountain Climbers</li>
+        <li><a href ="https://youtu.be/zT-9L3CEcmk"> 100 Mountain climbers (1 per leg)</a></li>
        </ul>
-       <p>1 minute resting periods </p>
           </div>
        </div>
        <br />
@@ -134,33 +140,64 @@ export default function WeightTraining() {
           <img src={require("./WeightTrainingImages/Bench-Press.gif")} alt="Diagram a man performing the bench press"  width={200} height={200}/>
           </div>
         <div>
-          <a href ="https://youtube.com/shorts/GSGdj-2B0hM?feature=share"><p>Dumbbell front raise</p></a>
-          <img src={require("./WeightTrainingImages/pull-ups.gif")} alt="gif of someone performing a pull-up" width={200} height={200} />
+          <a href ="https://youtu.be/sxeY7kMYhLc"><p>Barbell front raise</p></a>
+          <img src={require("./WeightTrainingImages/barbellFrontRaise.gif")} alt="gif of someone performing a barbell front raise" width={200} height={200} />
           </div>
         <div>
-          <a href ="https://youtu.be/fO3dKSQayfg"><p>Dumbbell Row</p></a>
-          <img src={require("./WeightTrainingImages/lunges.gif")} alt ="gif of a man performing lunges" width ={200} height={200} />
+          <a href ="https://youtu.be/PgpQ4-jHiq4"><p>Dumbbell Row</p></a>
+          <img src={require("./WeightTrainingImages/dumbbellRow.gif")} alt ="gif of a man dumbbell Row" width ={200} height={200} />
           </div>
         <div>
-          <a href="https://youtube.com/shorts/VZnY9KoO3Ng?feature=share"><p>Dumbbell lunges</p></a>
-        <img src={require("./WeightTrainingImages/sit-ups.gif")} alt="gif of a man performing sit-ups" width={200} height={200} />
+          <a href="https://youtu.be/xu4ahA2VJuo"><p>Dumbbell lunges</p></a>
+        <img src={require("./WeightTrainingImages/Dumbbell-Lunge.gif")} alt="gif of a woman performing dumbbell lunges" width={200} height={200} />
         </div>
         </div>
 
-      <p>A good example of circuit training using weights would be:</p>
-      <p>5 rounds 3-5 minute rest</p>
+      <p>A good example of circuit training using weights and calisthenics would be:<br />
+      Click on the exercise to learn more!</p>
+
+    <div className="circuitExamples">
+      <div className="circuitEx4">
+      <p>5 Rounds<br />
+      3-5 Minute Rest</p>
       <ul>
-        <li>10 overhead squats</li>
-        <li>15 dumbbell Curls each arm</li>
-        <li>20 kettlebell swings</li>
-        <li>25 mountain climbers</li>
-        <li>1 minute plank</li>
+        <li>10 Deadlifts</li>
+        <li>15 Pull-ups</li>
+        <li><a href ="https://youtu.be/rHzi_n72pNI">20 Kettlebell Swings</a></li>
+        <li><a href ="https://youtu.be/zT-9L3CEcmk"> 100 Mountain climbers (1 per leg)</a></li>
+        <li>1 Minute Plank</li>
       </ul>
+      </div>
+
+    <div className="circuitEx5">
+      <p>3 Rounds<br />
+      3-5 Minute Rest</p>
+      <ul>
+        <li>100 Jump Rope</li>
+        <li><a href ="https://youtu.be/KzYlXWXVw3o">15 Barbell Upright Rows</a></li>
+        <li><a href="https://youtu.be/ArZXCfbjxWs">20 Knee-tuck Jumps</a></li>
+        <li>25 Jumping Jacks</li>
+      </ul>
+      </div>
+
+      <div className="circuitEx6">
+      <p>5 Rounds<br />
+      3-5 Minute Rest</p>
+      <ul>
+        <li><a href ="https://youtu.be/MJao9o7ROs0">40 Dumbbell Front Squats</a></li>
+        <li><a href="https://youtu.be/3OZ2MT_5r3Q">15 Dumbbell Curls (Each arm)</a></li>
+        <li><a href ="https://youtu.be/rHzi_n72pNI">20 Kettlebell Swings</a></li>
+        <li><a href ="https://youtu.be/zT-9L3CEcmk"> 100 Mountain climbers (1 per leg)</a></li>
+        <li>1 Minute Plank</li>
+      </ul>
+      </div>
+      </div>
 
       <h2 className="startForBegin" >Advantages of strength training</h2>
+      
       <ol>
         <li>Makes you stronger</li>
-        <li>Burs calories efficiently</li>
+        <li>Burns calories efficiently</li>
         <li>Decreases Abdominal fat</li>
         <li>Gives you a leaner look</li>
         <li>Decreases your risk of falls</li>
@@ -172,8 +209,9 @@ export default function WeightTraining() {
         <li>Improves brain health</li>
         <li>Improves sex drive</li>
       </ol>
-
         <div>
+
+          {/*add something */}
         <button className="btn-left" onClick ={() => navigate(-1)}>Previous</button>
         <NavLink to="Diet">
             <button className="btn-right">Next</button>

@@ -294,9 +294,27 @@
     height: 400px;
 }
 
+.beginnerBody a {
+    color: black;
+    text-decoration: none;
+}
+
+.beginnerBody a:hover {
+    color: blue;
+}
+
 .circuitExamples {
     display: flex;
     justify-content: space-between;
+}
+
+.circuitExamples a {
+    color: white;
+    text-decoration: none;
+}
+
+.circuitExamples a:hover {
+    color: rgb(159, 159, 230);
 }
 
 .circuitEx1 {
@@ -312,4 +330,23 @@
 .circuitEx3 {
     background-color: #655b5b;
     color: white;
+}
+
+.circuitEx4 {
+    background-color: #db2424;
+    color: white;
+}
+
+.circuitEx5 {
+    background-color: #9b2828;
+    color: white;
+}
+
+.circuitEx6 {
+    background-color: #db2424;
+    color: white;
+}
+
+.advantages {
+    display: inline-flex;
 }
