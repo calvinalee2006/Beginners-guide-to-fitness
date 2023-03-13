@@ -5,7 +5,10 @@ export default function Diet() {
     const navigate = useNavigate()
   return (
     <>
-    <h1>Eating Healthy</h1>
+   
+    <h1 className="healthyHeading">Eating Healthy</h1>
+    
+    <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
     concerns you are going to worry about. This topic alone scares so many beginners that
     they give up their commitment to health and succumb to cravings. The fast pace of daily
@@ -41,6 +44,7 @@ export default function Diet() {
         <NavLink to="/">
             <button className="btn-right">Next</button>
             </NavLink>
+            </div>
             </div>
     </>
   )
