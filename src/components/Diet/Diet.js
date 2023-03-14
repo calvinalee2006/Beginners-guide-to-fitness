@@ -1,13 +1,21 @@
-import React from 'react'
+import React from 'react';
+import CanvasJS from 'canvasjs.react';
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 import {NavLink,useNavigate} from 'react-router-dom';
 
+
 export default function Diet() {
+  
+
     const navigate = useNavigate()
+
+    
   return (
     <>
    
     <h1 className="healthyHeading">Eating Healthy</h1>
-    
+
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
     concerns you are going to worry about. This topic alone scares so many beginners that
