@@ -1,41 +1,8 @@
 import React from 'react'
-import CanvasJSReact from './canvasjs.react';
 import {NavLink,useNavigate} from 'react-router-dom';
-var canvasJS = CanvasJSReact.CanvasJSs;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
-
 
 export default function Diet() {
 
-  class Canvas extends Component{
-    render() {
-      const options = {
-        theme: "dark2",
-        animationEnabled: true,
-        exportFileName: "New Year Resolutions",
-        exportEnabled: true,
-        title:{
-          text: "Top Categories of New Year's Resolution"
-        },
-        data: [{
-          type: "pie",
-          showInLegend: true,
-          legendText: "{label}",
-          toolTipContent: "{label}: <strong>{y}%</strong>",
-          indexLabel: "{y}%",
-          indexLabelPlacement: "inside",
-          dataPoints: [
-            { y: 32, label: "Health" },
-            { y: 22, label: "Finance" },
-            { y: 15, label: "Education" },
-            { y: 19, label: "Career" },
-            { y: 5, label: "Family" },
-            { y: 7, label: "Real Estate" }
-          ]
-        }]
-      }
-    }
-  }
     const navigate = useNavigate()
   return (
     <>
@@ -43,10 +10,7 @@ export default function Diet() {
     <h1 className="healthyHeading">Eating Healthy</h1>
 
     <div>
-			<CanvasJSChart options = {options}
-				/* onRef={ref => this.chart = ref} */
-			/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
+			
 		</div>
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
