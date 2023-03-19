@@ -1,5 +1,7 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
+import {Stage, Layer, Circle, Line } from 'react-konva';
+
 
 export default function Diet() {
 
@@ -10,8 +12,32 @@ export default function Diet() {
     <h1 className="healthyHeading">Eating Healthy</h1>
 
     <div>
+    <Stage width={window.innerWidth} height={window.innerHeight}>
+      <Layer>
+        <Circle 
+        x={window.innerWidth / 2} 
+        y={window.innerHeight / 2} 
+        radius={300} 
+        fill="white"
+        stroke ="Black" 
+        strokeWidth={5} />
+        <Line
+         x={window.innerWidth / 4 - 150} 
+         y={window.innerHeight / 4 - 80} 
+         points={[400, 200, 400, 400, 200, 400]}
+         closed={true}
+         fill="red"
+         stroke="black"
+         strokeWidth={2}
+         
+        />
+      </Layer>
+    </Stage>
 			
 		</div>
+
+
+
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
     concerns you are going to worry about. This topic alone scares so many beginners that
