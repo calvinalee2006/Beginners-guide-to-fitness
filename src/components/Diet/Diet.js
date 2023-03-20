@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
-import {Stage, Layer, Circle, Line } from 'react-konva';
+import {Stage, Layer, Circle, Line} from 'react-konva';
 
 
 export default function Diet() {
@@ -22,14 +22,16 @@ export default function Diet() {
         stroke ="Black" 
         strokeWidth={5} />
         <Line
-         x={window.innerWidth / 4 - 150} 
-         y={window.innerHeight / 4 - 80} 
-         points={[400, 200, 400, 400, 200, 400]}
-         closed={true}
-         fill="red"
-         stroke="black"
-         strokeWidth={2}
-         
+            x={window.innerWidth / 2}
+            y={window.innerHeight / 2}
+            points={[-100, -100, 100, -100, 100, 100, -100, 100]}
+            closed={true}
+            fill="red"
+            stroke="black"
+            strokeWidth={2}
+            bezier={true}
+            tension={0.1}
+            lineCap="round"
         />
       </Layer>
     </Stage>
