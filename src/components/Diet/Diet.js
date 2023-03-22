@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
-import {Stage, Layer, Circle, Line} from 'react-konva';
+import {Stage, Layer, Circle, Rect, Text} from 'react-konva';
 
 
 export default function Diet() {
@@ -14,24 +14,107 @@ export default function Diet() {
     <div>
     <Stage width={window.innerWidth} height={window.innerHeight}>
       <Layer>
+      <Circle 
+        x={window.innerWidth - 300} 
+        y={window.innerHeight - 700} 
+        radius={100} 
+        fill="white"
+        stroke ="Black" 
+        strokeWidth={5}
+         />
+         <Text
+          x={window.innerWidth - 365}
+          y={window.innerHeight - 730}
+          text="Dairy"
+          fontSize={60}
+          fontFamily="'sans-serif;"
+          fill="Black"
+          align="center"
+          verticalAlign="middle"
+        />
         <Circle 
         x={window.innerWidth / 2} 
         y={window.innerHeight / 2} 
-        radius={300} 
+        radius={320} 
         fill="white"
         stroke ="Black" 
         strokeWidth={5} />
-        <Line
-            x={window.innerWidth / 2}
-            y={window.innerHeight / 2}
-            points={[-100, -100, 100, -100, 100, 100, -100, 100]}
-            closed={true}
-            fill="red"
-            stroke="black"
-            strokeWidth={2}
-            bezier={true}
-            tension={0.1}
-            lineCap="round"
+        <Rect
+        x={window.innerWidth / 2-210} 
+        y={window.innerHeight / 2-210} 
+        width={200}
+        height={200}
+        fill="red"
+        stroke="black"
+        strokeWidth={2}
+      /> 
+      <Text
+          x={480}
+          y={310}
+          text="Fruits"
+          fontSize={45}
+          fontFamily="'sans-serif;"
+          fill="white"
+          align="center"
+          verticalAlign="middle"
+        />
+        
+      <Rect
+        x={window.innerWidth / 2} 
+        y={window.innerHeight / 2 - 210} 
+        width={200}
+        height={200}
+        fill="orange"
+        stroke="black"
+        strokeWidth={2}
+      /> 
+      <Text
+          x={680}
+          y={310}
+          text="Grains"
+          fontSize={45}
+          fontFamily="'sans-serif;"
+          fill="white"
+          align="center"
+          verticalAlign="middle"
+        />
+       <Rect
+        x={window.innerWidth / 2} 
+        y={window.innerHeight / 2} 
+        width={200}
+        height={200}
+        fill="purple"
+        stroke="black"
+        strokeWidth={2}
+        />
+         <Text
+          x={window.innerWidth / 2 + 30 }
+          y={window.innerHeight / 2 + 75}
+          text="Protein"
+          fontSize={45}
+          fontFamily="'sans-serif;"
+          fill="white"
+          align="center"
+          verticalAlign="middle"
+        />
+        <Rect
+        x={window.innerWidth / 2-210} 
+        y={window.innerHeight / 2} 
+        width={200}
+        height={200}
+        fill="green"
+        stroke="black"
+        strokeWidth={2}
+        />
+         <Text
+          x={430}
+          y={510}
+          text="Vegetables"
+          fontSize={45}
+          fontFamily="'sans-serif;"
+          fill="white"
+          align="center"
+          verticalAlign="middle"
         />
       </Layer>
     </Stage>
