@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavLink,useNavigate} from 'react-router-dom';
-import {Stage, Layer, Circle, Rect, Text} from 'react-konva';
+import {Stage, Layer, Circle,Shape, Rect, Text} from 'react-konva';
 
 
 export default function Diet() {
@@ -15,6 +15,17 @@ export default function Diet() {
     <Stage width={window.innerWidth} height={window.innerHeight}>
       <Layer>
       <Circle 
+        x={600} 
+        y={250} 
+        radius={220} 
+        fill="white"
+        stroke ="Black" 
+        strokeWidth={5} />
+        <Shape
+        
+        />
+
+      {/* <Circle 
         x={window.innerWidth - 300} 
         y={window.innerHeight - 700} 
         radius={100} 
@@ -115,7 +126,7 @@ export default function Diet() {
           fill="white"
           align="center"
           verticalAlign="middle"
-        />
+        /> */}
       </Layer>
     </Stage>
 			
