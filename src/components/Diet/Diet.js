@@ -5,23 +5,37 @@ import {Stage, Layer, Circle,Shape, Rect, Text} from 'react-konva';
 
 
 export default function Diet() {
-    const navigate = useNavigate()
-    const [isModalOpen, setIsModalOpen] = useState(false);
+     const navigate = useNavigate()
+     const [isOpen, setIsOpen] = useState(false)
 
-    const handleOpenModal = () => {
-      setIsModalOpen(true);
-    }
-    
-    const handleCloseModal = () => {
-      setIsModalOpen(false);
-    }
+     const handleFridgeClick = () => {
+      setIsOpen(!isOpen)
+     }
     
   return (
     <>
     <h1 className="healthyHeading">Eating Healthy</h1>
 
     <div>
-    <Stage width={window.innerWidth} height={window.innerHeight - 200}>
+      <div className = "fridgeContainer">
+      <div className ="background">
+    <div className = "fridge">
+       <p>Healthyfridge </p>
+       <div className ="handle" onClick={handleFridgeClick}></div>
+        </div>
+    </div>
+    <div className = "floor"></div>
+    </div>
+    {isOpen && <p>The fridge is now open!</p>}
+
+
+
+
+
+
+
+
+    {/* <Stage width={window.innerWidth} height={window.innerHeight - 200}>
       <Layer>
        <Circle 
         x={window.innerWidth - 300} 
@@ -130,7 +144,7 @@ export default function Diet() {
           verticalAlign="middle"
         /> 
       </Layer>
-    </Stage>
+    </Stage> */}
 			
 		</div>
 

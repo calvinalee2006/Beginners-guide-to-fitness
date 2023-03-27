@@ -367,3 +367,48 @@
     margin-top: 1rem;
     border-bottom: solid 10px #7b38d8;
 }
+
+.fridgeContainer {
+    width: 90%;
+    margin: auto;
+}
+
+.background {
+    background-color: lightblue;
+    background-size: 1rem;
+
+}
+
+.fridge {
+    width: 400px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    border: solid black 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.handle {
+    width: .5rem;
+    height: 10rem;
+    background-color: rgb(90, 87, 87);
+    margin-top: 8rem;
+    margin-left: 2rem;
+}
+
+.fridge p {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline 4px;
+    letter-spacing: 3px;
+    font-style: italic;
+    margin-top: 4rem;
+}
+
+.floor {
+    width: 100%;
+    height: 5px;
+    margin: auto;
+    background: brown;
+}
