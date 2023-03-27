@@ -1,37 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
+import ReactModal from 'react-modal'
 import {NavLink,useNavigate} from 'react-router-dom';
 import {Stage, Layer, Circle,Shape, Rect, Text} from 'react-konva';
 
 
 export default function Diet() {
-
     const navigate = useNavigate()
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+      setIsModalOpen(true);
+    }
+    
+    const handleCloseModal = () => {
+      setIsModalOpen(false);
+    }
+    
   return (
     <>
-   
     <h1 className="healthyHeading">Eating Healthy</h1>
 
     <div>
-    <Stage width={window.innerWidth} height={window.innerHeight}>
+    <Stage width={window.innerWidth} height={window.innerHeight - 200}>
       <Layer>
-      <Circle 
-        x={600} 
-        y={250} 
-        radius={220} 
-        fill="white"
-        stroke ="Black" 
-        strokeWidth={5} />
-        <Shape
-        
-        />
-
-      {/* <Circle 
+       <Circle 
         x={window.innerWidth - 300} 
         y={window.innerHeight - 700} 
         radius={100} 
         fill="white"
         stroke ="Black" 
         strokeWidth={5}
+        onMouseDown={handleOpenModal}
+        onMouseUp={handleCloseModal}
+        ariaHideApp={false}
          />
          <Text
           x={window.innerWidth - 365}
@@ -42,14 +43,15 @@ export default function Diet() {
           fill="Black"
           align="center"
           verticalAlign="middle"
+          onClick={handleOpenModal}
         />
-        <Circle 
-        x={window.innerWidth / 2} 
-        y={window.innerHeight / 2} 
-        radius={320} 
-        fill="white"
-        stroke ="Black" 
-        strokeWidth={5} />
+        <ReactModal
+              isOpen={isModalOpen}
+              onRequestClose={handleCloseModal}
+            >
+              <h2>Dairy Modal</h2>
+              <p>This is the content of the Dairy modal.</p>
+            </ReactModal>
         <Rect
         x={window.innerWidth / 2-210} 
         y={window.innerHeight / 2-210} 
@@ -126,7 +128,7 @@ export default function Diet() {
           fill="white"
           align="center"
           verticalAlign="middle"
-        /> */}
+        /> 
       </Layer>
     </Stage>
 			
