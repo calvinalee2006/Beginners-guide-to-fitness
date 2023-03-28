@@ -6,10 +6,10 @@ import {Stage, Layer, Circle,Shape, Rect, Text} from 'react-konva';
 
 export default function Diet() {
      const navigate = useNavigate()
-     const [isOpen, setIsOpen] = useState(false)
+     const [isDoorOpen, setIsDoorOpen] = useState(false)
 
      const handleFridgeClick = () => {
-      setIsOpen(!isOpen)
+      setIsDoorOpen(!isDoorOpen)
      }
     
   return (
@@ -19,14 +19,15 @@ export default function Diet() {
     <div>
       <div className = "fridgeContainer">
       <div className ="background">
-    <div className = "fridge">
+      <div className={`fridge ${isDoorOpen ? 'open' : ''}`}>
        <p>Healthyfridge </p>
        <div className ="handle" onClick={handleFridgeClick}></div>
         </div>
     </div>
     <div className = "floor"></div>
     </div>
-    {isOpen && <p>The fridge is now open!</p>}
+    
+     
 
 
 
