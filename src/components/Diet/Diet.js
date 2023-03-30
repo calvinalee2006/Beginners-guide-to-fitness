@@ -1,17 +1,14 @@
 import React, {useState} from 'react'
 import ReactModal from 'react-modal'
 import {NavLink,useNavigate} from 'react-router-dom';
-import {Stage, Layer, Circle,Shape, Rect, Text} from 'react-konva';
 
 
 export default function Diet() {
      const navigate = useNavigate()
      const [isDoorOpen, setIsDoorOpen] = useState(false)
-     const [isInsideOpen, setIsInsideOpen] = useState(false)
 
      const handleFridgeClick = () => {
       setIsDoorOpen(!isDoorOpen)
-      setIsInsideOpen(isDoorOpen && !IsInsideOpen)
      }
     
   return (
@@ -22,11 +19,10 @@ export default function Diet() {
       <div className = "fridgeContainer">
       <div className ="background">
       <div className={`fridge ${isDoorOpen ? 'open' : ''}`}>
-        <p>{isDoorOpen ? 'Inside the fridge' : 'Healthyfridge'}</p>
-       <p>Healthyfridge </p>
+        <p>{isDoorOpen ? 'HealthyFridge' : ''}</p>
        <div className ="handle" onClick={handleFridgeClick}></div>
        <div className ="fridgeContents">
-        {/* Display contents of fridge */}
+       
        </div>
         </div>
     </div>

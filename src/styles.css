@@ -386,19 +386,13 @@
     border: solid black 4px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
-    transform-origin: right center;
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
 }
 
-/* .fridge.open {
-    transform: rotateY(-90deg);
-    width: 400px;
-    height: 500px;
-    margin: auto;
-    border: solid black 4px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-} */
+.fridge.open {
+    transform: rotateY(-150deg);
+}
 
 .handle {
     width: .5rem;
@@ -406,6 +400,7 @@
     background-color: rgb(90, 87, 87);
     margin-top: 8rem;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .fridge p {
