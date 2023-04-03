@@ -378,6 +378,16 @@
     background-size: 1rem;
 }
 
+.openFridge {
+    width: 400px;
+    height: 500px;
+    background: white;
+    border: solid black 4px;
+    border: solid black 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .fridge {
     width: 400px;
     height: 500px;
