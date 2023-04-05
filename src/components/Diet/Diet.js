@@ -18,6 +18,22 @@ export default function Diet() {
     <div>
       <div className = "fridgeContainer">
       <div className ="background">
+        <div className = "InsideFridge"> 
+          <div className = "firstRung">
+
+            <div className = "milk"><p>MILK</p></div>
+            <div className="spoon">
+              </div>
+            <div className = "cereal"></div>
+            
+            <div className= "bowl">
+              <p>Grains</p>
+                </div>
+
+          <div className="orange"><p>Fruit</p></div>
+          </div>
+          
+        </div>
       <div className={`fridge ${isDoorOpen ? 'open' : ''}`}>
         <p>{isDoorOpen ? '' : 'HealthyFridge'}</p>
        <div className ="handle" onClick={handleFridgeClick}></div>

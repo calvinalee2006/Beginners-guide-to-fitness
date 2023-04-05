@@ -378,6 +378,64 @@
     background-size: 1rem;
 }
 
+.InsideFridge {
+    width: 400px;
+    height: 500px;
+    background: white;
+    border: solid black 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.firstRung {
+    margin-top: 13rem;
+    width: 24.5rem;
+    height: 10px;
+    background-color: gray;
+    border: solid black 4px;
+}
+
+.milk {
+    width: 50px;
+    height: 100px;
+    color: blue;
+    border: solid black 3px;
+}
+
+.orange {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+}
+
+.bowl {
+    width: 80px;
+    height: 50px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background: rgb(172, 163, 147);
+}
+
+.spoon {
+    width: 38px;
+    height: 7px;
+    background-color: silver;
+    margin-left: 4rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: rotate(-0.15turn)
+}
+
+.cereal {
+    width: 70px;
+    height: 15px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    background: rgb(192, 71, 71);
+}
+
 .openFridge {
     width: 400px;
     height: 500px;
