@@ -25,11 +25,13 @@ export default function Diet() {
             <div className="spoon">
               </div>
             <div className = "cereal"></div>
-            
             <div className= "bowl">
-              <p>Grains</p>
-                </div>
-
+              <p>Grains</p></div>
+              <div className = "carrotContainer">
+              {/* Add a carrot stem */}
+              <div className= "carrot"><p>Vegetables</p></div>
+              </div>
+              
           <div className="orange"><p>Fruit</p></div>
           </div>
           
