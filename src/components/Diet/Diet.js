@@ -18,22 +18,23 @@ export default function Diet() {
     <div>
       <div className = "fridgeContainer">
       <div className ="background">
-        <div className = "InsideFridge"> 
-          <div className = "firstRung">
-
+        <div className = "InsideFridge">
+          <div className = "firstRungFoods"> 
             <div className = "milk"><p>MILK</p></div>
-            <div className="spoon">
-              </div>
+
+            <div className ="cerealBowl">
+            <div className="spoon"></div>
             <div className = "cereal"></div>
             <div className= "bowl">
-              <p>Grains</p></div>
-              <div className = "carrotContainer">
-              {/* Add a carrot stem */}
-              <div className= "carrot"><p>Vegetables</p></div>
+              </div>
               </div>
               
-          <div className="orange"><p>Fruit</p></div>
+              {/* Add a carrot stem */}
+              <div className= "carrot"></div>
+                    
+          <div className="orange"></div>
           </div>
+          <div className = "firstRung"></div>
           
         </div>
       <div className={`fridge ${isDoorOpen ? 'open' : ''}`}>

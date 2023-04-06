@@ -388,7 +388,6 @@
 }
 
 .firstRung {
-    margin-top: 13rem;
     width: 24.5rem;
     height: 10px;
     background-color: gray;
@@ -444,6 +443,12 @@
     border-bottom: 50px solid orange;
     border-radius: 10px;
     transform: rotate(-0.35turn)
+}
+
+.firstRungFoods {
+    display: inline-flex;
+    justify-content: space-between;
+
 }
 
 .openFridge {
