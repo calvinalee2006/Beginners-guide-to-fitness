@@ -18,22 +18,27 @@ export default function Diet() {
     <div>
       <div className = "fridgeContainer">
       <div className ="background">
+
         <div className = "InsideFridge">
           <div className = "firstRungFoods"> 
-            <div className = "milk"><p>MILK</p></div>
 
+            <div className = "milk"><p>MILK</p></div>
+            
             <div className ="cerealBowl">
             <div className="spoon"></div>
             <div className = "cereal"></div>
-            <div className= "bowl">
-              </div>
+            <div className= "bowl"></div>
               </div>
               
               {/* Add a carrot stem */}
-              <div className= "carrot"></div>
+              
+              <div className= "carrot">
+              <div className="carrotStem"></div>
+              </div>
                     
           <div className="orange"></div>
           </div>
+
           <div className = "firstRung"></div>
           
         </div>

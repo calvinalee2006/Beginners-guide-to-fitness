@@ -394,6 +394,15 @@
     border: solid black 4px;
 }
 
+.firstRungFoods {
+    margin-top: 8rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
 .milk {
     width: 50px;
     height: 100px;
@@ -402,6 +411,7 @@
 }
 
 .orange {
+    margin-top: 2.5rem;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -427,6 +437,10 @@
     transform: rotate(-0.15turn)
 }
 
+.cerealBowl {
+    margin-top: 2rem;
+}
+
 .cereal {
     width: 70px;
     height: 15px;
@@ -435,7 +449,15 @@
     background: rgb(192, 71, 71);
 }
 
+.carrotStem {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
 .carrot {
+    margin-top: 3.2rem;
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
@@ -443,12 +465,6 @@
     border-bottom: 50px solid orange;
     border-radius: 10px;
     transform: rotate(-0.35turn)
-}
-
-.firstRungFoods {
-    display: inline-flex;
-    justify-content: space-between;
-
 }
 
 .openFridge {
