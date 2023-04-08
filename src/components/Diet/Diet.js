@@ -10,6 +10,7 @@ export default function Diet() {
      const handleFridgeClick = () => {
       setIsDoorOpen(!isDoorOpen)
      }
+
     
   return (
     <>
@@ -22,6 +23,8 @@ export default function Diet() {
         <div className = "InsideFridge">
           <div className = "firstRungFoods"> 
 
+
+
             <div className = "milk"><p>MILK</p></div>
             
             <div className ="cerealBowl">
@@ -32,9 +35,7 @@ export default function Diet() {
               
               {/* Add a carrot stem */}
               
-              <div className= "carrot">
-              <div className="carrotStem"></div>
-              </div>
+              <div className= "carrot"></div>
                     
           <div className="orange"></div>
           </div>

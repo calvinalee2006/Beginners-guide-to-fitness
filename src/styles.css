@@ -449,13 +449,6 @@
     background: rgb(192, 71, 71);
 }
 
-.carrotStem {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: green;
-}
-
 .carrot {
     margin-top: 3.2rem;
     width: 0;
