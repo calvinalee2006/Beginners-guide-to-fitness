@@ -6,12 +6,15 @@ import {NavLink,useNavigate} from 'react-router-dom';
 export default function Diet() {
      const navigate = useNavigate()
      const [isDoorOpen, setIsDoorOpen] = useState(false)
+     const [isMilkModalOpen,setIsMilkModalOpen] = useState(false)
+     const [isBowlModalOpen, setIsBowlModalOpen] = useState(false)
+     const [isCarrotModalOpen, setIsCarrotModalOpen] = useState(false)
+     const [isOrangeModalOpen, setIsOrangeModalOpen] = useState(false)
 
      const handleFridgeClick = () => {
       setIsDoorOpen(!isDoorOpen)
      }
-
-    
+ 
   return (
     <>
     <h1 className="healthyHeading">Eating Healthy</h1>
@@ -23,19 +26,28 @@ export default function Diet() {
         <div className = "InsideFridge">
           <div className = "firstRungFoods"> 
 
-
-
-            <div className = "milk"><p>MILK</p></div>
-            
+        <button 
+        onClick={() => setIsMilkModalOpen(true)} 
+        className = "milk">
+          <p>MILK</p>
+        </button>
+             
             <div className ="cerealBowl">
             <div className="spoon"></div>
             <div className = "cereal"></div>
-            <div className= "bowl"></div>
+            <button
+            onClick={() => setIsBowlModalOpen(true)}
+             className= "bowl">
+             </button>
               </div>
               
               {/* Add a carrot stem */}
+              <button
+              onClick={() =>setIsCarrotModalOpen(true)} 
+              className= "carrot">
+              </button>
+
               
-              <div className= "carrot"></div>
                     
           <div className="orange"></div>
           </div>
@@ -54,6 +66,31 @@ export default function Diet() {
     <div className = "floor"></div>
     </div>
 		</div>
+
+    <ReactModal
+     isOpen={isMilkModalOpen}
+     ariaHideApp={false}
+     onRequestClose ={() => setIsMilkModalOpen(false)}>
+      <button onClick={() => setIsMilkModalOpen(false)}>Close</button>
+      {/* Dairy information and picture */}
+    </ReactModal>
+
+    <ReactModal
+     isOpen={isBowlModalOpen}
+     ariaHideApp={false}
+     onRequestClose ={() => setIsBowlModalOpen(false)}>
+      <button onClick={() => setIsBowlModalOpen(false)}>Close</button>
+      {/* Vegetables information and picture */}
+    </ReactModal>
+
+    <ReactModal
+     isOpen={isCarrotModalOpen}
+     ariaHideApp={false}
+     onRequestClose ={() => setIsCarrotModalOpen(false)}>
+      <button onClick={() => setIsCarrotModalOpen(false)}>Close</button>
+      {/* Vegetables information and picture */}
+    </ReactModal>
+
 
 
 
