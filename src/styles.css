@@ -410,6 +410,12 @@
     border: solid black 3px;
 }
 
+.dairyHeader {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 8rem;
+}
+
 .orange {
     margin-top: 2.5rem;
     width: 60px;

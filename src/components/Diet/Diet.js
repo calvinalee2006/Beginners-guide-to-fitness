@@ -73,11 +73,11 @@ export default function Diet() {
      onRequestClose ={() => setIsMilkModalOpen(false)}>
       <button onClick={() => setIsMilkModalOpen(false)}>Close</button>
       <div style={{backgroundImage: `url(${MilkCarton})`,
-                   backgroundSize: 'cover',
                    height: '100%',
                    width: '100%', 
-                   
                    }}>
+                    <h1 className ="dairyHeader">Dairy</h1>
+                    
                    </div>
     </ReactModal>
 
