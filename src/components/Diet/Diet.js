@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import ReactModal from 'react-modal'
 import {NavLink,useNavigate} from 'react-router-dom';
+import MilkCarton from './DietImages/MilkCarton.jpg';
 
 
 export default function Diet() {
@@ -41,15 +42,14 @@ export default function Diet() {
              </button>
               </div>
               
-              {/* Add a carrot stem */}
               <button
               onClick={() =>setIsCarrotModalOpen(true)} 
               className= "carrot">
               </button>
-
-              
-                    
-          <div className="orange"></div>
+         
+          <button
+           onClick={() =>setIsCarrotModalOpen(true)}
+          className="orange"></button>
           </div>
 
           <div className = "firstRung"></div>
@@ -72,7 +72,13 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsMilkModalOpen(false)}>
       <button onClick={() => setIsMilkModalOpen(false)}>Close</button>
-      {/* Dairy information and picture */}
+      <div style={{backgroundImage: `url(${MilkCarton})`,
+                   backgroundSize: 'cover',
+                   height: '100%',
+                   width: '100%', 
+                   
+                   }}>
+                   </div>
     </ReactModal>
 
     <ReactModal
@@ -80,7 +86,7 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsBowlModalOpen(false)}>
       <button onClick={() => setIsBowlModalOpen(false)}>Close</button>
-      {/* Vegetables information and picture */}
+      {/* Grains information and picture */}
     </ReactModal>
 
     <ReactModal
@@ -89,6 +95,14 @@ export default function Diet() {
      onRequestClose ={() => setIsCarrotModalOpen(false)}>
       <button onClick={() => setIsCarrotModalOpen(false)}>Close</button>
       {/* Vegetables information and picture */}
+    </ReactModal>
+
+    <ReactModal
+     isOpen={isOrangeModalOpen}
+     ariaHideApp={false}
+     onRequestClose ={() => setIsOrangeModalOpen(false)}>
+      <button onClick={() => setIsOrangetModalOpen(false)}>Close</button>
+      {/* fruit information and picture */}
     </ReactModal>
 
 
