@@ -411,9 +411,42 @@
 }
 
 .dairyHeader {
+    color: #3f09ef;
     font-family: 'Montserrat';
     text-align: center;
     font-size: 8rem;
+}
+
+.dairyInfo {
+    position: relative;
+    height: 100%;
+    width: 95%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dairyInfo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dairyInfo h3 {
+    color: #3f09ef;
+}
+
+.dairyInfo {
+    color: #f05b11;
+    font-family: 'Montserrat';
+    font-size: 19.5px;
 }
 
 .orange {

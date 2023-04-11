@@ -72,12 +72,22 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsMilkModalOpen(false)}>
       <button onClick={() => setIsMilkModalOpen(false)}>Close</button>
-      <div style={{backgroundImage: `url(${MilkCarton})`,
-                   height: '100%',
-                   width: '100%', 
-                   }}>
-                    <h1 className ="dairyHeader">Dairy</h1>
-                    
+      <div className="dairyInfo" style={{backgroundImage: `url(${MilkCarton})`}}>
+                     <h1 className ="dairyHeader">Dairy</h1> 
+                    <h3>Why is Dairy Important?</h3>
+                    <p>Dairy products are know for its benefits of maintaining strong and healthy bones in the body.
+                      Milk is an excellent source of calcium, vitamin D, vitamin K, phosphorus and magnesium. Calcium is highly known to be linked 
+                      to dairy and 99% of your body's calcium is stored in your bones and teeth. </p>
+                      <p>Dairy products are used in almost everything we eat and drink, from smoothies, cookies, ice cream, cheese etc.  But some people
+                        can not consume dairy products or have a hard time digesting it through there system. There are substitutes for dairy products that you can consume such as:  </p>
+                        <ul>
+                          <li>Almond Milk- Made from almonds, this plant-based alternative is lower in calories and fat than regular dairy milk.</li>
+                          <li>Coconut milk-This tropical drink made from coconut flesh and water has a creamy texture and mild flavor. </li>
+                          <li>Cashew milk-Cashews and water combine to make this subtly sweet and rich substitute.</li>
+                          <li>soy Milk-This alternative is made from hemp seeds and provides a good amount of high quality-plant based protein.</li>
+                          <li>Oat milk-This substitute is very mild in flavor with a thicker consistency, making it a great addition to coffee.</li>
+                          <li>Rice Milk-A great option for those with sensitivities or allergies, as it is the least allergenic of all nondairy milks. </li>
+                        </ul>
                    </div>
     </ReactModal>
 
