@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import ReactModal from 'react-modal'
 import {NavLink,useNavigate} from 'react-router-dom';
-import MilkCarton from './DietImages/MilkCarton.jpg';
-
 
 export default function Diet() {
      const navigate = useNavigate()
@@ -48,7 +46,7 @@ export default function Diet() {
               </button>
          
           <button
-           onClick={() =>setIsCarrotModalOpen(true)}
+           onClick={() =>setIsOrangeModalOpen(true)}
           className="orange"></button>
           </div>
 
@@ -72,9 +70,8 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsMilkModalOpen(false)}>
       <button onClick={() => setIsMilkModalOpen(false)}>Close</button>
-      <div className="dairyInfo" style={{backgroundImage: `url(${MilkCarton})`}}>
-                     <h1 className ="dairyHeader">Dairy</h1> 
-                    <h3>Why is Dairy Important?</h3>
+                      <div className = "dairyModule">
+                     <h1>Dairy</h1> 
                     <p>Dairy products are know for its benefits of maintaining strong and healthy bones in the body.
                       Milk is an excellent source of calcium, vitamin D, vitamin K, phosphorus and magnesium. Calcium is highly known to be linked 
                       to dairy and 99% of your body's calcium is stored in your bones and teeth. </p>
@@ -88,7 +85,7 @@ export default function Diet() {
                           <li>Oat milk-This substitute is very mild in flavor with a thicker consistency, making it a great addition to coffee.</li>
                           <li>Rice Milk-A great option for those with sensitivities or allergies, as it is the least allergenic of all nondairy milks. </li>
                         </ul>
-                   </div>
+                        </div>
     </ReactModal>
 
     <ReactModal
@@ -96,7 +93,20 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsBowlModalOpen(false)}>
       <button onClick={() => setIsBowlModalOpen(false)}>Close</button>
-      {/* Grains information and picture */}
+      <div className="grainsModule">
+      <h1>Grains</h1> 
+      <p>There are two types of grains, whole grains and refined grains:</p>
+      <ul>
+        <li>Whole Grains - Which are grains made with the entire grain kernel. Some whole-grain examples are whole-wheat flour
+          bulgur(cracked wheat), oatmeal, and brown rice. 
+        </li>
+        <li>Refined grains - Which are grains that have been milled and removes bran and germ, which can be found in whole grains. This is done 
+          to give grains a finer texture and improve their shelf life, but doing this removes nutrients from the grains. Some examples of refined grain products are
+          white flour, corn grit, white bread and white rice.</li>
+      </ul>
+      <p>Grains are an important sources of many nutrients, including complex carbohydrates, dietary fiber, several B vitamins and minerals.</p>
+      <p>Not only does whole grain fiber help with bowl movements, it also may help lower the risk of heart disease, and is also used to carry oxygen to the blood. </p>
+      </div>
     </ReactModal>
 
     <ReactModal
@@ -104,19 +114,32 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsCarrotModalOpen(false)}>
       <button onClick={() => setIsCarrotModalOpen(false)}>Close</button>
-      {/* Vegetables information and picture */}
+      <div className ="vegModule">
+    <h1>Vegetables </h1>
+    <p>Vegetables!! BLAH!! That is the normal reaction to when people are suggested to include them in their diet. But vegetables add and do so much to your body,
+      it is amazing how people can go a day without one! Vegetables an be served in many different forms (juiced, frozen, canned, dried etc.).
+      Vegetables are organized into 5 subgroups based on their nutritional value: </p>
+      <ul>
+        <li>Dark Green - Vegetables such as kale, spinach, and collard greens provides the body with Vitamin K, a nutrient that helps reduce blood clotting, 
+           and inflammatory diseases such as arthritis. </li>
+        <li>Red and orange - Vegetables such as carrots and red bell peppers, which may help reduce the risk of diabetes, osteoporosis and high cholesterol.</li>
+        <li>Beans, Peas, and Lentils - Basically, and bean! Black, garbanzo, kidney, lima, the list seems endless. Beans are a strong source for protein, fiber, and iron. Beans help lower blood glucose levels
+          that can help prevent diabetes.  </li>
+        <li>Starchy - Vegetables such as corn and potatoes are a vital source for energy and satisfies hunger so you won't have the ure to reach for that bag of chips. </li>
+        <li>Other - Vegetables such as beets, cabbage, cucumbers, which are overall good to add to your diet. </li>
+      </ul>
+    </div>
     </ReactModal>
 
     <ReactModal
      isOpen={isOrangeModalOpen}
      ariaHideApp={false}
      onRequestClose ={() => setIsOrangeModalOpen(false)}>
-      <button onClick={() => setIsOrangetModalOpen(false)}>Close</button>
-      {/* fruit information and picture */}
+      <button onClick={() => setIsOrangeModalOpen(false)}>Close</button>
+      <div className= "fruitModule">
+        <h1>Fruits</h1>
+      </div>
     </ReactModal>
-
-
-
 
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST

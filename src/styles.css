@@ -410,43 +410,29 @@
     border: solid black 3px;
 }
 
-.dairyHeader {
-    color: #3f09ef;
+.dairyModule h1 {
     font-family: 'Montserrat';
     text-align: center;
     font-size: 8rem;
 }
 
-.dairyInfo {
-    position: relative;
-    height: 100%;
-    width: 95%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.dairyInfo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.dairyInfo h3 {
-    color: #3f09ef;
-}
-
-.dairyInfo {
-    color: #f05b11;
+.dairyModule h3 {
     font-family: 'Montserrat';
-    font-size: 19.5px;
+    text-align: center;
+}
+
+.dairyModule p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.dairyModule ul {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.dairyModule li {
+    padding-top: 10px;
 }
 
 .orange {
@@ -488,10 +474,30 @@
     background: rgb(192, 71, 71);
 }
 
+.grainsModule h1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 8rem;
+}
+
+.grainsModule p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.grainsModule ul {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.grainsModule li {
+    padding-top: 10px;
+}
+
 .carrot {
     margin-top: 1rem;
-    width: 0;
-    height: 0;
+    width: 10px;
+    height: 10px;
     border-left: 28px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 60px solid orange;
@@ -500,18 +506,34 @@
 }
 
 .carrot::before {
-    content: "";
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 0;
-    height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 30px solid green;
 }
 
+.vegModule h1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 5rem;
+}
+
+.vegModule p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.vegModule ul {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.vegModule li {
+    padding-top: 10px;
+}
 
 .openFridge {
     width: 400px;
