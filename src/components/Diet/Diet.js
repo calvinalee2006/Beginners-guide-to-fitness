@@ -138,6 +138,15 @@ export default function Diet() {
       <button onClick={() => setIsOrangeModalOpen(false)}>Close</button>
       <div className= "fruitModule">
         <h1>Fruits</h1>
+        <div className="fruitsModule">
+          <p>In this authors opinion, fruits are probably the easiest addition to a diet since a lot of people don't have issues consuming them. 
+            The fruit group includes all fruits and 100% fruit juice. Fruit juice from the store can have a lot of sugar and additives, so a great buy 
+            would be a juicer, that way you can make your own recipes and have natural fruit juice (and if you wanted to get creative you can do the same with vegetables). 
+            Fruits may be frozen, canned, or dried/dehydrated. Fruits can be eaten whole, cut up, pureed, or cooked.s
+          </p>
+          <p>Fruits are low in fat, sodium, and calories and do not have any cholesterol. Fruits provide vitamins such as potassium, fiber, vitamin C and folate.</p>
+
+        </div>
       </div>
     </ReactModal>
 
