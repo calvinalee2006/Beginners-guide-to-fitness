@@ -10,6 +10,7 @@ export default function Diet() {
      const [isCarrotModalOpen, setIsCarrotModalOpen] = useState(false)
      const [isOrangeModalOpen, setIsOrangeModalOpen] = useState(false)
 
+
      const handleFridgeClick = () => {
       setIsDoorOpen(!isDoorOpen)
      }
@@ -19,9 +20,10 @@ export default function Diet() {
     <h1 className="healthyHeading">Eating Healthy</h1>
 
     <div>
+    <div className ="background"></div>
+    
       <div className = "fridgeContainer">
-      <div className ="background">
-
+      
         <div className = "InsideFridge">
           <div className = "firstRungFoods"> 
 
@@ -51,9 +53,10 @@ export default function Diet() {
           </div>
 
           <div className = "firstRung"></div>
-          
+
         </div>
-      <div className={`fridge ${isDoorOpen ? 'open' : ''}`}>
+        
+      <div className={`fridge ${isDoorOpen ? 'open' : 'close'}`}>
         <p>{isDoorOpen ? '' : 'HealthyFridge'}</p>
        <div className ="handle" onClick={handleFridgeClick}></div>
        <div className ="fridgeContents">
@@ -61,9 +64,8 @@ export default function Diet() {
        </div>
         </div>
     </div>
-    <div className = "floor"></div>
+    
     </div>
-		</div>
 
     <ReactModal
      isOpen={isMilkModalOpen}
@@ -136,20 +138,21 @@ export default function Diet() {
      ariaHideApp={false}
      onRequestClose ={() => setIsOrangeModalOpen(false)}>
       <button onClick={() => setIsOrangeModalOpen(false)}>Close</button>
-      <div className= "fruitModule">
-        <h1>Fruits</h1>
+        
         <div className="fruitsModule">
+        <h1>Fruits</h1>
           <p>In this authors opinion, fruits are probably the easiest addition to a diet since a lot of people don't have issues consuming them. 
             The fruit group includes all fruits and 100% fruit juice. Fruit juice from the store can have a lot of sugar and additives, so a great buy 
             would be a juicer, that way you can make your own recipes and have natural fruit juice (and if you wanted to get creative you can do the same with vegetables). 
             Fruits may be frozen, canned, or dried/dehydrated. Fruits can be eaten whole, cut up, pureed, or cooked.s
           </p>
-          <p>Fruits are low in fat, sodium, and calories and do not have any cholesterol. Fruits provide vitamins such as potassium, fiber, vitamin C and folate.</p>
-
+          <p>Fruits are low in fat, sodium, and calories and do not have any cholesterol. Fruits provide vitamins such as potassium, fiber, vitamin C and folate.
+            Fruits rich with potassium may help maintain blood pressure, while fruits with dietary fiber helps reduce blood cholesterol levels. Eating fruits can also 
+            help with hydration because some fruit are composed of 90% water. 
+          </p>
         </div>
-      </div>
     </ReactModal>
-
+    
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
     concerns you are going to worry about. This topic alone scares so many beginners that

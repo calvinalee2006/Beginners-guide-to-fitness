@@ -357,6 +357,7 @@
     overflow: hidden;
     font-family: 'Montserrat';
     font-size: 1.5rem;
+    margin-top: 45%;
 }
 
 .healthyHeading {
@@ -369,16 +370,25 @@
 }
 
 .fridgeContainer {
+    position: relative;
     width: 90%;
-    margin: auto;
+    margin-left: 34%;
 }
 
 .background {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 57%;
     background-color: lightblue;
     background-size: 1rem;
+    z-index: -1;
 }
 
 .InsideFridge {
+    position: absolute;
+    z-index: 1;
     width: 400px;
     height: 500px;
     background: white;
@@ -408,6 +418,11 @@
     height: 100px;
     color: blue;
     border: solid black 3px;
+}
+
+.dairyModule {
+    position: absolute;
+
 }
 
 .dairyModule h1 {
@@ -442,6 +457,26 @@
     border-radius: 50%;
     background-color: orange;
     position: relative;
+}
+
+.fruitsModule h1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 8rem;
+}
+
+.fruitsModule p {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.fruitsModule ul {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+.fruitsModule li {
+    padding-top: 10px;
 }
 
 .bowl {
@@ -545,6 +580,8 @@
 }
 
 .fridge {
+    position: absolute;
+    z-index: 1;
     width: 400px;
     height: 500px;
     background: white;
@@ -553,12 +590,40 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     transform: rotateY(0deg);
-    transition: transform 0.5s;
+    transition: transform 0.1s;
 }
 
 
 .fridge.open {
     transform: rotateY(-120deg);
+    transform-origin: right center;
+    animation: open-door 2s alternate ease-in-out;
+}
+
+@keyframes open-door {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(-90deg);
+    }
+}
+
+.fridge.close {
+    transform: rotateY(-5deg);
+    transform-origin: right center;
+    animation: close-door 2s alternate ease-out
+}
+
+@keyframes open-door {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(-80deg);
+    }
 }
 
 .handle {
@@ -584,4 +649,6 @@
     height: 5px;
     margin: auto;
     background: brown;
+    z-index: -1;
+    background-position: center bottom;
 }
