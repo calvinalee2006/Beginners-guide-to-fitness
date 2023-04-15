@@ -370,25 +370,23 @@
 }
 
 .fridgeContainer {
-    position: relative;
     width: 90%;
     margin-left: 34%;
 }
 
 .background {
     position: absolute;
+    z-index: -1;
     top: 1;
     left: 0;
     width: 100%;
-    height: 57%;
+    height: 58%;
     background-color: lightblue;
     background-size: 1rem;
-    z-index: -1;
 }
 
 .InsideFridge {
     position: absolute;
-    z-index: 1;
     width: 400px;
     height: 500px;
     background: white;
@@ -422,6 +420,7 @@
 
 .dairyModule {
     position: absolute;
+    z-index: 100;
 
 }
 
@@ -581,7 +580,6 @@
 
 .fridge {
     position: absolute;
-    z-index: 1;
     width: 400px;
     height: 500px;
     background: white;
@@ -626,6 +624,7 @@
     }
 }
 
+
 .handle {
     width: .5rem;
     height: 10rem;
@@ -642,13 +641,4 @@
     letter-spacing: 3px;
     font-style: italic;
     margin-top: 4rem;
-}
-
-.floor {
-    width: 100%;
-    height: 5px;
-    margin: auto;
-    background: brown;
-    z-index: -1;
-    background-position: center bottom;
 }

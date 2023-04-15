@@ -22,6 +22,7 @@ export default function Diet() {
     <div>
     <div className ="background"></div>
     
+    
       <div className = "fridgeContainer">
       
         <div className = "InsideFridge">
@@ -64,7 +65,6 @@ export default function Diet() {
        </div>
         </div>
     </div>
-    
     </div>
 
     <ReactModal
@@ -153,6 +153,7 @@ export default function Diet() {
         </div>
     </ReactModal>
     
+    
     <div className ="healthyContainer">
     <p>When you first start exercising, eating healthy is going to be one of the BIGGEST
     concerns you are going to worry about. This topic alone scares so many beginners that
@@ -183,6 +184,7 @@ export default function Diet() {
 
         To shorten things up, if you have good input, you will get a fantastic output!
         If you have a bad input, then you will have a horrible output
+        
     </p>
       <div>
         <button className="btn-left" onClick ={() => navigate(-1)}>Previous</button>
