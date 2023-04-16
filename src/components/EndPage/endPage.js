@@ -1,13 +1,14 @@
-import React, {Fragment, useState} from 'react';
-import {NavLink} from 'react-router-dom'
+import React, {Fragment, useState} from 'react'
+import {NavLink,useNavigate} from 'react-router-dom';
 import {nanoid} from 'nanoid';
 import data from "./mock-data.json";
-import './noSurvey.css';
-import ReadOnlyRow from '../../ReadOnlyRow';
-import EditableRow from '../../EditableRow';
+import ReadOnlyRow from './ReadOnlyRow';
+import EditableRow from './EditableRow';
 
-function WorkoutJournal() {
-  const [workoutData, setWorkoutData] = useState(data);
+const endPage = () => {
+    const navigate = useNavigate()
+
+    const [workoutData, setWorkoutData] = useState(data);
   const [addFormData, setAddFormData] = useState({
     Date: "", 
     Activity: "",
@@ -110,18 +111,24 @@ function WorkoutJournal() {
 
     setWorkoutData(newWorkoutData);
   }
-
   return (
     <>
-      <h1>Example workout Journal</h1>
-      <p> When starting your workout Journey, keeping track of every activity, whether it be an actual workout, yard work, 
-        or playing with your children etc. it is always important to take not of what you have done. Remember, the primary goal is to raise 
-        your heartbeat and in my own personal terms "break a sweat" 
-      </p>
-      <p>We prefer the tried and true pen and paper method of keeping track of your workout, but we openly welcome you to keep track of your 
-        workout through this table, that way you can look back at all your workouts! 
-      </p>
-      <div className = 'app-container'>
+    
+    <h1 className = "docAndLearn">Documentation & learning</h1>
+    
+<div className ="endContainer">
+    <p>
+        Congratulations!! You now have a small introduction to developing a healthy lifestyle and beginning your workout journey. You have 
+        learned a couple ways to perform stretches, an introduction to cardio, strength training and a small start in learning about what eating 
+        healthy is all about.   
+    </p>
+    <p>One last piece of this puzzle is documentation. As you go through your journey it is always important to document your healthy activities, the foods you consume, 
+        your goals and how you feel about them. Before and after pictures are great, but it does not really tell how you got from point A to point B. 
+    </p>
+    <p>Documentation will give you a look back of what you could not do at the time, to what you can do at that moment and how you got there. A small example of documentation is a workout log.
+        when exercising writing out your exercises and what you did gives a person the motivation to keep going. 
+    </p>
+    <div className = 'app-container'>
         <form onSubmit ={handleEditFormSubmit}>
         <table>
             <thead>
@@ -156,7 +163,7 @@ function WorkoutJournal() {
 
         <h2>Add your exercise</h2>
         <form onSubmit={handleAddFormSubmit}>
-          <input 
+          <input className="date"
             type="text" 
             name="Date" 
             required="required"
@@ -170,7 +177,7 @@ function WorkoutJournal() {
             placeholder="Activity"
             onChange={handleAddFormChange}
           />
-          <input 
+          <input className="time"
             type="text" 
             name="Time" 
             required="required"
@@ -187,12 +194,19 @@ function WorkoutJournal() {
           <button type ="submit">Add</button>
         </form>
       </div>
-
-      <NavLink to="/noSurvey">
-            <button>Back</button>
+    <p>One thing about developing a healthy lifestyle is to <b>ALWAYS</b> learn more. As th saying goes "knowledge is power" and the more you learn the more you know, the more you learn. 
+    Learning from sources like books and the internet can help you reach your goal. Remember, once you reach your goal aim for another goal and keep that cycle going! The sky's the limit!!</p>
+    </div>
+      
+      <div>
+        <button className="btn-left" onClick ={() => navigate(-1)}>Previous</button>
+        <NavLink to="/">
+            <button className="btn-right">Next</button>
             </NavLink>
+            </div>
+            
     </>
   )
 }
 
-export default WorkoutJournal
+export default endPage

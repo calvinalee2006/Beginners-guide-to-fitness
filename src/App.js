@@ -4,6 +4,7 @@ import Stretching from './components/Stretches/Stretching'
 import Cardio from "./components/Cardio/Cardio";
 import WeightTraining from './components/WeightTraining/WeightTraining';
 import Diet from './components/Diet/Diet';
+import EndPage from './components/EndPage/endPage'
 // import WorkoutJournal from "./components/noSurvey/WorkoutJournal";
 import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
         <Route path = 'Stretching/Cardio'  element ={<Cardio />} />
         <Route path = '/Stretching/Cardio/WeightTraining' element = {< WeightTraining/>} />
         <Route path = '/Stretching/Cardio/WeightTraining/Diet' element ={<Diet/>} />
+        <Route path = '/Stretching/Cardio/WeightTraining/Diet/endPage' element ={<EndPage />} />
         {/* <Route path = 'WorkoutJournal' exact element={<WorkoutJournal/>}/> */}
       </Routes>
     </Router>

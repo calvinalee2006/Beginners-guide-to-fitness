@@ -172,7 +172,7 @@ export default function Diet() {
           on your health journey and how eating these foods and help your body during your health journey. </p>
       <div>
         <button className="btn-left" onClick ={() => navigate(-1)}>Previous</button>
-        <NavLink to="/">
+        <NavLink to="endPage">
             <button className="btn-right">Next</button>
             </NavLink>
             </div>
