@@ -5,16 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Introduction() {
     return (
       <>
-      <header>
-        <h1 className="introHeading">Fitness for beginners</h1>
-      </header>
-      <p>In these times it is important to keep mentally and physically healthy. But with 
-        life always keeping you on go, it is very easy forget your personal health. 
-        The age old saying of "I don't have time" becomes a constant saying in our daily dictionary, 
-        and in reality saying those words won't be very motivating </p>
-        <p>This app is to get you moving for just 30 minutes a day! Minimum cardio or 
-          small at home exercises to do to make sure you are keeping healthy and keeping your heartbeat up, 
-          at the same time clearing your mind of stress for the days ahead! </p>
+        <h1 className="introHeading">Beginners guide to fitness</h1>
+        <div className = "introContainer">
+          <p>With the hussle and bussle of life, fitting fitness into your daily life is a difficult task. But what makes starting more difficult 
+            is knowing where to begin. Having an idea of what to do, makes the journey easier and sometimes faster. 
+          </p>
+          <p>Here we would like to help you by giving you information and health tips you can use to starting adding some exercises and health tips you can 
+            use to start adding fitness into your lifestyle
+          </p>
+        </div>
+      
+    
           <NavLink to = '/stretching'>
             <button className="btn-right">Next</button>
             </NavLink>
