@@ -1,5 +1,6 @@
 {
-  "name": "my-exercise-app",
+  "homepage": "https://calvinalee2006.github.io/Beginners-guide-to-fitness/",
+  "name": "Beginners-guide-to-fitness",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "json:server": "json-server --watch db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
