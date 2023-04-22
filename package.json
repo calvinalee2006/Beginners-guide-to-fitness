@@ -21,7 +21,7 @@
     "json:server": "json-server --watch db.json",
     "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "deploy": "gh-pages -d build",
-    "build": "npm run build --if-present",
+    "build": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
