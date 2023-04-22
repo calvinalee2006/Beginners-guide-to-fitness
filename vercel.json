@@ -1,8 +1,16 @@
 {
     "rewrites": [
         {
-            "source": "/",
-            "destination": "/"
+            "source": "/Introduction",
+            "destination": "/Introduction"
+        },
+        {
+            "source": "/Stretching",
+            "destination": "/Stretching"
+        },
+        {
+            "source": "/Stretching/Cardio",
+            "destination": "/Stretching/Cardio"
         }
     ]
 }
