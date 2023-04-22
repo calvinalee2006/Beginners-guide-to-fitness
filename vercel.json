@@ -2,15 +2,27 @@
     "rewrites": [
         {
             "source": "/Introduction",
-            "destination": "/Introduction"
+            "destination": "/"
         },
         {
             "source": "/Stretching",
-            "destination": "/Stretching"
+            "destination": "/"
         },
         {
-            "source": "/Stretching/Cardio",
-            "destination": "/Stretching/Cardio"
+            "source": "/Stretching/Cardio/WeightTraining",
+            "destination": "/"
+        },
+        {
+            "source": "/Stretching/Cardio/WeightTraining/Diet",
+            "destination": "/"
+        },
+        {
+            "source": "/Stretching/Cardio/WeightTraining/Diet/endPage",
+            "destination": "/"
+        },
+        {
+            "source": "/Stretching",
+            "destination": "/"
         }
     ]
 }
