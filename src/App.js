@@ -13,6 +13,7 @@ import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
   return (
     <Router>
       <Routes>
+        {/*Added this for shits and giggles to see if it would change the package */}
         <Route path= "/" element={<Introduction />} />
         <Route path = '/Stretching'  element={<Stretching />} />
         <Route path = 'Stretching/Cardio'  element ={<Cardio />} />
