@@ -141,8 +141,8 @@ const endPage = () => {
                 </tr>
             </thead>
             <tbody>
-              {workoutData.map((workout) => (
-                <Fragment>
+              {workoutData.map((workout, pos) => (
+                <Fragment key={pos}> {/* added key for fix */}
                   {editWorkoutId === workout.id ? (
                   <EditableRow editFormData={editFormData}  
                   handleEditFormChange={handleEditFormChange}
