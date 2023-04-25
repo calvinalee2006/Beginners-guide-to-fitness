@@ -167,7 +167,7 @@ export default function Cardio() {
             a chance to enjoy nature at its finest. Have a friend, family member or spouse join you for your exercise. Having someone with you
             makes exercise easier and will help your mind at ease. <br /><br />
 
-            -If the weather is not cooperating and you have to stay inside, we recommend using youtube and finding a nice 30 min cardio workout! 
+            -If the weather is not cooperating and you have to stay inside, we recommend using youtube and finding a nice 30 min cardio workout! </p>
             <p>Here are two examples of beginner exercise videos that you can try! If those are not to your liking, you can always visit <a href="https://www.youtube.com/">youtube</a> and find one that fits your speed.</p><br />
             <div>
      </div>
@@ -196,7 +196,6 @@ export default function Cardio() {
             </div>
             </div>
                  
-         </p>
          <p> You start you will notice small progressions in yourself as you continue with along your cardio exercises. Maybe you finished your workout with ease, maybe you don't sweat as much as when you first started, 
           maybe your workout is getting kind of boring. Once you start noticing these progressions then you can start increasing the difficulty. Try working out with different cardio methods! Extend your walk by 5-10 minutes,
          the option to increase the difficulty are endless!  
