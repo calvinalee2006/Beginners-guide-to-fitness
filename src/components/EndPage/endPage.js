@@ -5,7 +5,7 @@ import data from "./mock-data.json";
 import ReadOnlyRow from './ReadOnlyRow';
 import EditableRow from './EditableRow';
 
-const endPage = () => {
+export default function EndPage() {
     const navigate = useNavigate()
 
     const [workoutData, setWorkoutData] = useState(data);
@@ -209,4 +209,4 @@ const endPage = () => {
   )
 }
 
-export default endPage
+

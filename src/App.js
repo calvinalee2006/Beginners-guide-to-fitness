@@ -4,10 +4,8 @@ import Stretching from './components/Stretches/Stretching'
 import Cardio from "./components/Cardio/Cardio";
 import WeightTraining from './components/WeightTraining/WeightTraining';
 import Diet from './components/Diet/Diet';
-import EndPage from './components/EndPage/endPage'
+import EndPage from './components/EndPage/EndPage';
 import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
-
-
 
  export default function App() {
   return (
@@ -18,7 +16,7 @@ import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
         <Route path = 'Stretching/Cardio'  element ={<Cardio />} />
         <Route path = '/Stretching/Cardio/WeightTraining' element = {< WeightTraining/>} />
         <Route path = '/Stretching/Cardio/WeightTraining/Diet' element ={<Diet/>} />
-        <Route path = '/Stretching/Cardio/WeightTraining/Diet/endPage' element ={<EndPage />} />
+        <Route path = '/Stretching/Cardio/WeightTraining/Diet/EndPage' element ={<EndPage />} />
       </Routes>
     </Router>
   );
