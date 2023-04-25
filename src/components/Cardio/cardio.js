@@ -41,19 +41,19 @@ export default function Cardio() {
           
           <div className="lowIntensity">
   <ul className ="lowIntensityList">
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Walking"> Walking</a></li>
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Swimming_(sport)">  Swimming</a></li>
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Cycling"> cycling</a></li>
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Rowing_(sport)"> Rowing</a></li>
-    <li class ="dashed">Elliptical Machine</li>
-    <li class ="dashed">Yard Work</li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Walking"> Walking</a></li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Swimming_(sport)">  Swimming</a></li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Cycling"> cycling</a></li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Rowing_(sport)"> Rowing</a></li>
+    <li className ="dashed">Elliptical Machine</li>
+    <li className ="dashed">Yard Work</li>
   </ul>
   <ul className ="lowIntensityList">
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Yoga">Yoga</a></li>
-    <li class ="dashed">Physical activity with your partner</li>
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Dance"> Dancing</a></li>
-    <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Hiking">Hiking</a></li>
-    <li class ="dashed"><a href= "https://en.wikipedia.org/wiki/Tai_chi">Tai Chi</a></li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Yoga">Yoga</a></li>
+    <li className ="dashed">Physical activity with your partner</li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Dance"> Dancing</a></li>
+    <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Hiking">Hiking</a></li>
+    <li className ="dashed"><a href= "https://en.wikipedia.org/wiki/Tai_chi">Tai Chi</a></li>
   </ul>
 
   <Slider className="sliderOne" {...settings}>
@@ -143,20 +143,20 @@ export default function Cardio() {
       
     </Slider>  
     <ul className ="highIntensityList">
-            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Running">Running</a></li>
-            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/Skipping_rope">Jumping rope</a></li>
-            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/High-intensity_interval_training">H.I.I.T training</a> </li>
-            <li class ="dashed"><a href ="https://en.wikipedia.org/wiki/CrossFit">CrossFit</a></li>
-            <li class ="dashed">stair climber machine</li>
+            <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Running">Running</a></li>
+            <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/Skipping_rope">Jumping rope</a></li>
+            <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/High-intensity_interval_training">H.I.I.T training</a> </li>
+            <li className ="dashed"><a href ="https://en.wikipedia.org/wiki/CrossFit">CrossFit</a></li>
+            <li className ="dashed">stair climber machine</li>
           </ul>
           <ul className ="highIntensityList">
-            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Spinning_(cycling)">Spinning</a></li>
-            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Sprint_(running)">Sprinting</a></li>
-            <li class ="dashed"><a href="https://en.wikipedia.org/wiki/Circuit_training">Circuit training</a></li>
-            <li class ="dashed">Swimming</li>
+            <li className ="dashed"><a href="https://en.wikipedia.org/wiki/Spinning_(cycling)">Spinning</a></li>
+            <li className ="dashed"><a href="https://en.wikipedia.org/wiki/Sprint_(running)">Sprinting</a></li>
+            <li className ="dashed"><a href="https://en.wikipedia.org/wiki/Circuit_training">Circuit training</a></li>
+            <li className ="dashed">Swimming</li>
           </ul>
           </div>
-           <div class= "cardioParagraph">
+           <div className = "cardioParagraph">
         <p><b>Remember</b> you just need to keep the intensity high enough to challenge your heart and lungs!</p>
 
         <p>A study in the <i>Journal of Physiology</i> found that <b>Four to five cardio workouts a week is optimal 
@@ -172,26 +172,26 @@ export default function Cardio() {
             <div>
      </div>
             
-            <div class= "cardioVideos">
-              <div class = "cardioVidOne">
+            <div className= "cardioVideos">
+              <div className = "cardioVidOne">
             <iframe
             width="500" 
             height="315" 
             src="https://www.youtube.com/embed/ml6cT4AZdqI"
             title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+            allowFullScreen>
             </iframe>
             </div>
 
-            <div class ="cardioVidTwo">
+            <div className ="cardioVidTwo">
             <iframe 
             width="560" 
             height="315" 
             src="https://www.youtube.com/embed/4o3iAH_ddBQ"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
+            allowFullScreen>
             </iframe>
             </div>
             </div>

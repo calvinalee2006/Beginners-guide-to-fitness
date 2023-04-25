@@ -55,7 +55,7 @@ export default function Stretching()  {
             src="https://www.youtube.com/embed/oaq2UiWXof8" 
             title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowFullscreen>
+            allowFullScreen>
             </iframe>
             </div>
             
@@ -74,7 +74,7 @@ export default function Stretching()  {
                src="https://www.youtube.com/embed/oDdkytliOqE" 
                title="YouTube video player"  
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-               allowFullscreen>
+               allowFullScreen>
                </iframe>
                </div>
                
@@ -93,7 +93,7 @@ export default function Stretching()  {
               src="https://www.youtube.com/embed/3CEmHJXbNpc" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullscreen>
+              allowFullScreen>
                 </iframe>
                 </div>
                 <br />
@@ -117,7 +117,7 @@ export default function Stretching()  {
             src="https://www.youtube.com/embed/zgvolE4NAH0" 
             title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowFullscreen>
+            allowFullScreen>
             </iframe>
             </div>
             
@@ -135,7 +135,7 @@ export default function Stretching()  {
               src="https://www.youtube.com/embed/Z3xK3trnpfw" 
               title="YouTube video player"  
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullscreen>
+              allowFullScreen>
               </iframe>
               </div>
           
@@ -152,7 +152,7 @@ export default function Stretching()  {
               src="https://www.youtube.com/embed/zzvDO56B0HE" 
               title="YouTube video player"  
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullscreen></iframe>
+              allowFullScreen></iframe>
               </div>
 
         <p className ="stretchPara">If you have a problem figuring out a Dynamic stretch that works for you, here are some stretch routines
@@ -175,7 +175,7 @@ export default function Stretching()  {
         src="https://www.youtube.com/embed/pPlFSqXnbls"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullscreen>          
+        allowFullScreen>          
         </iframe>
         </div>
 
@@ -193,7 +193,7 @@ export default function Stretching()  {
         src="https://www.youtube.com/embed/aZ1PzhThqcU" 
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         allowFullscreen>
+         allowFullScreen>
          </iframe>
         {/*Later Note: Add Authors static and dynamic stretch routine */}
 
