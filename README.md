@@ -25,5 +25,4 @@ click [here](https://my-exercise-hv2s7xlo9-calvinalee2006.vercel.app/) to checko
 >software development journey with React. 
 
 ### Author: Calvin Anthony Lee | Software Developer 
-[Github](https://github.com/calvinalee2006)
-[LinkedIn](https://www.linkedin.com/in/calvinalee/) 
+[Github](https://github.com/calvinalee2006) |  [LinkedIn](https://www.linkedin.com/in/calvinalee/) 
